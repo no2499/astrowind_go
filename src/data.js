@@ -3,7 +3,19 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Landing',
+      text: '創業格言',
+      href: '#',
+    },
+    {
+      text: '理事長的話',
+      href: '#',
+    },
+    {
+      text: '最新消息',
+      href: '#',
+    },
+    {
+      text: '活動花絮',
       links: [
         {
           text: 'Sass',
@@ -20,7 +32,15 @@ export const headerData = {
       ],
     },
     {
-      text: 'Pages',
+      text: '檔案下載',
+      href: '#',
+    },
+    {
+      text: '分析師名單',
+      href: '#',
+    },
+    {
+      text: '#',
       links: [
         {
           text: 'Features',
@@ -49,16 +69,12 @@ export const headerData = {
       ],
     },
     {
-      text: 'Widgets',
-      href: '#',
-    },
-    {
-      text: 'Blog',
+      text: '所有文章',
       href: getBlogPermalink(),
     },
   ],
   actions: [
-    { type: 'button', text: '下載', href: 'https://github.com/onwidget/astrowind' }
+    { type: 'button', text: '線上報名', href: 'https://github.com/onwidget/astrowind' }
   ],
 };
   
