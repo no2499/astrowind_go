@@ -10,7 +10,7 @@ tags:
 canonical: https://astrowind.vercel.app/get-started-website-with-astro-tailwind-css
 layout: '~/layouts/MarkdownLayout.astro'
 ---
-<img src="/images/aboutboss.jpg" >
+<img src="/images/aboutboss.jpg" width="300" height=300>
 
 ## 現在就讓我們一起來探討腦的心智與發展狀況吧!因為我們都要成為腦的最主人!
 
