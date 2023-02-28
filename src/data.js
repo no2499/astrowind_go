@@ -74,70 +74,64 @@ export const headerData = {
     },
   ],
   actions: [
-    { type: 'button', text: '線上報名', href: 'https://github.com/onwidget/astrowind' }
+    { type: 'button', text: '線上報名', href: '#' }
   ],
 };
   
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: '聯絡我們',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: '電話 02-2322-5018', href: '#' },
+        { text: '傳真 02-2321-5506', href: '#' },
+        { text: '台北市中正區重慶南路二段57-2號9樓', href: '#' },
       ],
     },
     {
-      title: 'Platform',
+      title: '各地駐點',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: '台北市(MME)', href: '#' },
+        { text: '香港研究團隊', href: '#' },
+        { text: '廈門', href: '#' },
+        { text: '貴陽', href: '#' },
+        { text: '福建', href: '#' },
+        { text: '廣州', href: '#' },
+        { text: '濟康(上海、威海、新疆、蘇州)', href: '#' },
       ],
     },
     {
-      title: 'Support',
+      title: '快速連結',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: '創業格言', href: '#' },
+        { text: '理事長的話', href: '#' },
+        { text: '最新消息', href: '#' },
+        { text: '活動花絮', href: '#' },
       ],
     },
     {
-      title: 'Company',
+      title: '相關資源',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: '檔案下載', href: '#' },
+        { text: '分析師名單', href: '#' },
+        { text: '所有文章', href: '#' },
+        { text: '線上報名', href: '#' },
       ],
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: '', href: getPermalink('/terms') },
+    { text: '', href: getPermalink('/privacy') },
   ],
   socialLinks: [
     { ariaLabel: 'Twitter', icon: 'tabler:brand-twitter', href: '#' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: '#' },
   ],
   footNote: `
-    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 float-left rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
-    Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
+    
+    MME 2023 · All rights reserved.
   `,
 };
