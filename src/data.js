@@ -8,7 +8,7 @@ export const headerData = {
     },
     {
       text: '理事長的話',
-      href: '/mme/talk',
+      href: '/aboutboss',
     },
     {
       text: '最新消息',
