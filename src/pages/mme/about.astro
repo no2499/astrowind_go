@@ -4,13 +4,14 @@ import Layout from '~/layouts/PageLayout.astro';
 import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import boss from '~/aboutboss.jpg';
+import boss from '~/assets/images/aboutboss.jpg';
 import { headerData } from '~/data';
 const meta = {
-  title: "Startup Landing Page",
+  title: "理事長的話",
 };
 ---
 
+<img src={boss} width="400" alt="image description" />
 <Layout {meta}>
   <Fragment slot="header">
     <Header
@@ -20,13 +21,13 @@ const meta = {
       position="left"
     />
   </Fragment>
-
+  <img src={boss} width="400" alt="image description" />
   <!-- Hero2 Widget ******************* -->
-  <img src={boss} width="40" alt="image description" />
+  
   <Hero
   >
     <Fragment slot="title">
-      理事長的話10
+      理事長的話11
     </Fragment>
 
     <Fragment slot="subtitle">
