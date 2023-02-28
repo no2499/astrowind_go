@@ -16,7 +16,7 @@ const whenExternalScripts = (items = []) => SITE.googleAnalyticsId ? Array.isArr
 export default defineConfig({
   site: SITE.origin,
   base: SITE.basePathname,
-  trailingSlash: SITE.trailingSlash ? 'always' : 'never',
+  trailingSlash: SITE.trailingSlash ? 'never' : 'never',
   output: 'static',
   markdown: {
     remarkPlugins: [readingTimeRemarkPlugin]
