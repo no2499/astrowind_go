@@ -4,7 +4,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import boss from '~/assets/images/aboutboss.jpg';
+import boss from '../aboutboss.jpg';
 import { headerData } from '~/data';
 const meta = {
   title: "Startup Landing Page",
@@ -26,7 +26,7 @@ const meta = {
   <Hero
   >
     <Fragment slot="title">
-      理事長的話7
+      理事長的話8
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -39,7 +39,7 @@ const meta = {
       </Fragment>
 
     <Fragment slot="image">
-      <img src={boss} alt="image description" />
+      <img src={boss} width="40" alt="image description" />
     </Fragment>
   </Hero>
 
