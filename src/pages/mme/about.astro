@@ -1,6 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
+import { Image } from '@astrojs/image/components';
 import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
@@ -39,7 +39,7 @@ const meta = {
       </Fragment>
 
     <Fragment slot="image">
-      <img src="../aboutboss.jpg" alt="image description" />
+      <Image src={"~/assets/images/aboutboss.jpg"} alt="image description" width={300} aspectRatio={16/9}/>
     </Fragment>
   </Hero>
 
