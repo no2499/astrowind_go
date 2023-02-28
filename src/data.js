@@ -4,30 +4,22 @@ export const headerData = {
   links: [
     {
       text: '創業格言',
-      href: '#',
+      href: '/mme/about',
     },
     {
       text: '理事長的話',
-      href: '#',
+      href: '/mme/talk',
     },
     {
       text: '最新消息',
-      href: '#',
+      href: '/mme/news',
     },
     {
       text: '活動花絮',
       links: [
         {
-          text: 'Sass',
+          text: '建構中',
           href: getPermalink('/landing/saas'),
-        },
-        {
-          text: 'Startup',
-          href: getPermalink('/landing/startup'),
-        },
-        {
-          text: 'Mobile App',
-          href: getPermalink('/landing/mobile-app'),
         },
       ],
     },
