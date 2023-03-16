@@ -1,0 +1,20 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "蘇碧洋";
+const mimg = "/images/analyst/ac0011.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 蘇碧洋：泉州幼兒師範高等專科學校初等教育學院副教授；教育碩士；國家二級心理諮詢師；兒童遊戲治療師；本會團體心理諮詢師；《東南早報》心理專家組成員；泉州市婦聯家教講師團成員。近年來主編出版《小學生心理學》和《大學生心理健康教育與輔導》《普通心理學》三本專業教材，在CN刊物上發表文章10多篇。給中小學幼稚園教師、部隊官兵、幼稚園、小學、中學家長開過心理健康、家庭教育專題講座及團體心理活動數十場。目前在學校主要從事心理學教學和大學生心理健康教育與諮詢工作。</div>
+</Layout>

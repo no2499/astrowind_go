@@ -1,0 +1,23 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "張素嫻";
+const mimg = "/images/analyst/ah0001.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 特殊學校任教21年
+    ◎ MME高階研究員
+    ◎ 香港晨輝特教學校老師
+    ◎ MME研究者輔導師</div>
+</Layout>

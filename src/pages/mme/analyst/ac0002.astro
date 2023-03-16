@@ -1,0 +1,28 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "李春苗";
+const mimg = "/images/analyst/ac0002.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 1996年資訊工程學院無線電物理專業畢業
+    ◎ 1999年外國語學院英語語言文學學士畢業
+    ◎ 2003年政治學院軍事社會學專業碩士畢業
+    ◎ 2006年華南師範大學應用心理學專業博士畢業
+    ◎ 專長:從事心理諮詢與治療的實踐與教學十五年，擅長深度心理治療，熟練運用精神分析技術、心理分析技術、沙盤遊戲治療、夢的分析、繪畫治療、意象對話治療、催眠治療、敘事療法等心理諮詢與治療技術
+    ◎ 2003年至2006年攻讀心理學博士學位
+    ◎ 2006年至2011年從事思想政治工作
+    ◎ 2011年至2014年廈門社會福利中心心靈花園從事孤兒心理諮詢與治療
+    ◎ 2014年至今閩南師範大學心理系心理諮詢與治療教學</div>
+</Layout>

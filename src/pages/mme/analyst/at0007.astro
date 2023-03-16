@@ -1,0 +1,25 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "曾春梅";
+const mimg = "/images/analyst/at0007.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 中台技術學院幼保系畢業
+    ◎ 曾任台中愛兒園托兒所 混齡角落教學保育員
+    ◎ 曾任台北佳美幼稚園 主題教學實習保育員
+    ◎ 曾任台北巧天才幼兒園 蒙特梭利教學保育員
+    ◎ 現任MME高階研究員、專職分析師
+    ◎ 研究運用範圍家庭、婚姻、掌紋醫學</div>
+</Layout>

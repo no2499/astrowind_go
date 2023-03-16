@@ -1,0 +1,25 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "李素珍";
+const mimg = "/images/analyst/ac0003.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 女，1972年10月出生，本科學歷。2004年6月聘為小學高級教師至今，現任廈門實驗小學段長。 作為語文教師和班主任，她熱愛教育教學工作，勤於思考，善於實踐，耐心教導學生，深受家長和學生的喜愛。擔任班主任期間，所帶班級的班風良好，年年被評為校“文明班級”。
+    ◎ 1999—2000學年所帶的五（2）班榮獲市“先進集體”
+    ◎ 2006-2007學年所帶的六（3）班榮獲市“先進集體”
+    ◎ 2003—2004學年所帶的四（4）班獲思明區“先進集體”稱號。
+    ◎ 在二十幾年的教育教學生涯中，曾獲得 廈門市“優秀教師”、廈門市“優秀少先隊輔導員”等稱號；多次被評為校 “優秀教師”、“優秀教育工作者”、 “優秀班主任”、“優秀段長”等。
+    ◎ 國小資優生培訓組研究員</div>
+</Layout>

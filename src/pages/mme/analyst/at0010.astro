@@ -1,0 +1,28 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "黃鈴諭";
+const mimg = "/images/analyst/np.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 法律系畢業
+    ◎ 財政部國有財產局法務
+    ◎ 小學課輔志工、故事志工、情緒教育志工
+    ◎ 財團法人人本教育文教基金會父母成長班小組長
+    ◎ 財團法人人本教育文教基金會活動企劃
+    ◎ 財團法人人本教育文教基金會數學想想國教師
+    ◎ 羽白群學行政
+    ◎ 羽白群學小學高年級導師
+    ◎ 現職： 1、自學生家長 2、社團法人羽白群學學會秘書長 3、桃園市非學校型態實驗教育審議會審議委員 4、致勝力量Inner Power Coaching自我教練養生計畫培訓教練</div>
+</Layout>

@@ -1,0 +1,23 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "萬玉紅";
+const mimg = "/images/analyst/ac0012.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 泉州婦幼主治醫師
+    ◎ 國家二級心理諮詢師
+    ◎ 國家二級營養師
+    ◎ MME量身教育國際研究會皮紋分析師</div>
+</Layout>

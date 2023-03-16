@@ -1,0 +1,20 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "貴陽e智教育";
+const mimg = "/images/analyst/ac0015.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 尊重生命 體驗生活 玩出能力 （貴陽e智幼稚園簡介） 貴陽e智教育於2007年創建了貴陽市雲岩區e智星福兒建構幼稚園，使用面積6800平方米、幼兒戶外場地3000平方米，其間e智星福兒建構幼稚園在2013年11月榮獲貴陽幼專“國培計畫”實踐基地；2016年獲得貴州省市級示範幼稚園稱號；2014年創建了貴陽市雲岩區e智星福兒生態幼稚園，建築面積2200平方米、戶外活動面積2000平方米；2015年創建了貴陽市雲岩區金寶國際幼稚園，建築面積3073平方米，戶外活動場地1236平方米。 我園堅持“三全四優創名園”的辦園宗旨，抱著“尊重生命，體驗生活，玩出能力”的辦園理念，提出和研究“讓e智寶貝玩出大能力”的教育體系。 我園忠實履行辦園宗旨，為孩子創設一個健康人格培養的樂園，我園做到五心：“省心、放心、稱心、安心、開心”的育兒基地。 家長省心——嚴格自我管理，讓家長省心。 社會放心——注重辦園品質，回饋社會。 家長稱心——樹立家園共同體，共建有機家庭環境。 教師安心——營造“家”的溫暖，建構姊妹情節，讓教師安心成長。 幼兒開心——孩子開心，開心生智慧 貴陽e智幼稚園</div>
+</Layout>

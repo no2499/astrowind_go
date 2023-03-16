@@ -1,0 +1,23 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "許月里";
+const mimg = "/images/analyst/at0021.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 新北市板橋區私立幼祥幼兒園園長
+    ◎ 新北市板橋區幼兒教保協會理事 監事 秘書
+    ◎ 新北市兒童教保聯合總會名譽理事
+    ◎ MME高階分析</div>
+</Layout>

@@ -1,0 +1,21 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "李凌";
+const mimg = "/images/analyst/ac0013.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 心理师，天赋潜能检测分析师，中国生命教育研究院院长，广州市心理咨询师协会副会长，喜乐精舍心理实修馆主人。从业心理咨询20余年，专注精英一族的“自我成长、家庭幸福、孩子教养、事业发展”的心理训练和生命规划。中央电视台《心理访谈》《家庭》栏目心理专家，凤凰卫视《鲁豫有约》邀请嘉宾，广州白云心理医院创办人之一，心理科创科主任15年。
+    ◎ 讲学课程： 《谨慎结婚/负责任地怀孩子》《阳光家庭与幸福工程》《幼儿教育与家庭传承》《家有熊孩子》《胜利一生幸福一辈子秘诀》《如何创造自己的喜乐人生》《如何发现自己的天赋潜能并应用于生活》《西方心理学与中华修养论》《如何助力人生的美好未来》《老师醒悟学生觉悟》《应对黑狗，光亮人生》《心理化国学教育的魅力》。</div>
+</Layout>

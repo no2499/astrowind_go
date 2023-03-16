@@ -1,0 +1,22 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "呂玉娟";
+const mimg = "/images/analyst/at0005.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 現任何嘉仁創意建構積木課程講師
+    ◎ 來得幼兒園親職教養輔導講師（藉由皮紋檢測使家長在教養幼童更為得心應手）
+    ◎ MME量身教育國際研究會高階分析師</div>
+</Layout>

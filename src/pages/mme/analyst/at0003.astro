@@ -1,0 +1,25 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "陳蘊文";
+const mimg = "/images/analyst/at0003.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 台南科技大學音樂系，主修鋼琴
+    ◎ 河合鋼琴兒童音樂班講師、朱宗慶兒童打擊教學系統講師
+    ◎ 「陳蘊文音樂空間」創辦人
+    ◎ 凱薩琳音樂教學系統講師
+    ◎ MME量身教育國際研究會高階皮紋分析師
+    ◎ 發表2006年國家圖書館－皮紋檢測運用於音樂智能研究論文</div>
+</Layout>

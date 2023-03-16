@@ -1,0 +1,26 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "范姜之秀";
+const mimg = "/images/analyst/at0004.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ MME 量身教育研究會高階分析師
+    ◎ MME 2006年皮紋學論文：大腦認知與數學智慧整合研究
+    ◎ 數學協會種子教師
+    ◎ 中華民國數學生活學會 種子教師
+    ◎ SOGO百貨親子館全腦數學教師
+    ◎ TOP KIDS 全腦開發中心老師
+    ◎ 量身教育自由教師（預約制）</div>
+</Layout>

@@ -1,0 +1,25 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "劉文龍";
+const mimg = "/images/analyst/at0018.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 28年職涯任派於飛行相關部門為主（担任帶飛教官、 飛安管理、飛訓計管、人事規劃、主管督導等職務）
+    ◎ 飛行人員甄選暨飛航策略顧問
+    ◎ MME 研究員暨高階行為氣質諮商師
+    ◎ 2010年發表『飛行員人格特質』研究報告
+    ◎ 2018年發表『看見了視覺與生命的意義』研究報告
+    ◎ 台東日光寺善童班及松鶴班長期志工講師</div>
+</Layout>

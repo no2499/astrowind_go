@@ -1,0 +1,32 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "楊立雅";
+const mimg = "/images/analyst/ac0004.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 從事特殊教育工作25年
+    ◎ 廈門市集美區杏濱中心小學總務保衛處副主任
+    ◎ 杏濱小學輔讀班、杏濱小學資源教室負責人
+    ◎ 現任：廈門市集美區特殊教育學校副校長 廈門市集美區特殊教育資源與指導中心辦公室副主任
+    ◎ 2008年加入MME研究員，10年研究資歷 MME高級分析師
+    ◎ 國家二級心理諮詢師 精油康復理療師
+    ◎ 2008年至2013年，隨賴翠莞博士參加思明區特殊教育學校區級課題《皮紋檢測工具 運用在特殊兒童教育的策略研究》的研究。
+    ◎ 2009年撰寫的《我們一起成長》一文，榮獲廈門市特教教師徵文評比第一名。
+    ◎ 2013年5月，開始皮紋運用於自閉症兒童的研究。
+    ◎ 2016年4月，被評為“2016年廈門心欣天使”
+    ◎ 2017年9月任命為廈門市特殊教育體育康復方向教研組組長。
+    ◎ 2018年3月聘任為廈門市特殊教育學科指導組成員。
+    ◎ 2018年5月在2018年MME兩岸論文，發表題為《皮紋學運用於自閉症兒童家庭教育 輔導之探討》論文。</div>
+</Layout>

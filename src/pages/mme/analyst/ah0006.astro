@@ -1,0 +1,30 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "孔憲明";
+const mimg = "/images/analyst/ah0006.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 美國認證自然醫學醫生
+    ◎ 香港永恆醫療保健中心總監
+    ◎ 深圳遠東婦兒科醫院兒保科客席醫生
+    ◎ 廣州中山三院愛博恩國際婦產中心兒保科客席醫生
+    ◎ 臺灣MME高級皮紋分析師
+    ◎ 美國ABNLP認證身心語言程式執行師
+    ◎ 美國ABH認證催眠治療師
+    ◎ 親子遊戲治療證書
+    ◎ AIT聽覺統合訓練師、導師
+    ◎ 量子身心靈健康評估顧問
+    ◎ 藝術治療執行師</div>
+</Layout>

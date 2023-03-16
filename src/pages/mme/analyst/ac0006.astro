@@ -1,0 +1,27 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "程子人";
+const mimg = "/images/analyst/ac0006.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 臺灣量身教育國際研究會研究員
+    ◎ MME皮紋學分析師
+    ◎ MME繪畫分析師
+    ◎ 國家二級心理師
+    ◎ 曾亮NLP智慧父母導師
+    ◎ NLP執行師＼廈門IN2
+    ◎ 中國員工心理健康工程 EAP身心健康指導師
+    ◎ 2008年認識MME，2014年正式加入這個大家庭，如今以身為MME研究員為榮。 賴老師常說少年強則中國強，中國的未來靠孩子，MME是一個非常棒的輔助工具。</div>
+</Layout>

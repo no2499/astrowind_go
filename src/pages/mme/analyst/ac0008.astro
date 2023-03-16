@@ -1,0 +1,21 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "傅佳麗(汀洲特教團隊)";
+const mimg = "/images/analyst/ac0008.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 大學本科，應用心理學專業，現杭州市余杭區汀洲學校，教務處副主任，MME研究員、國家二級心理諮詢師沙盤遊戲治療師、繪畫分析師 結業2018年5月發表論文-皮紋檢測運用于特殊兒童診斷教育的初探
+    ◎ 汀洲特教團隊成員:傅佳麗、祝長雪、徐歡、倪慧</div>
+</Layout>

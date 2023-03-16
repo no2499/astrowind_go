@@ -1,0 +1,37 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "張明慧";
+const mimg = "/images/analyst/at0014.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 中國文化大學中文系文藝創作組暨青少年兒童福利學系畢業
+    ◎ 世新大學社會發展所碩士
+    ◎ MME高階分析師
+    ◎ 南洋台灣姊妹會名譽理事
+    ◎ 永齡文教基金會社工諮詢委員
+    ◎ 台灣性別平等教育協會理事
+    ◎ 台灣兒童發展協會常務監事
+    ◎ 台灣兒童發展協會馬匹輔助教育中心負責人
+    ◎ 台灣馬術治療中心治療性騎乘初級教練
+    ◎ 治療性桌遊設計師
+    ◎ 皮紋論文與研究興趣
+    ◎ 皮紋分析應用於家庭輔導
+    ◎ 皮紋分析如何協助感覺統合失調兒童
+    ◎ 皮紋分析如何協助安置機構兒童與成癮青少年
+    ◎ 桌遊設計與工作坊
+    ◎ 如何應用桌遊調整思考模式
+    ◎ 透過桌遊找尋自己，自我覺察與自我改變
+    ◎ 桌遊設計顧問</div>
+</Layout>

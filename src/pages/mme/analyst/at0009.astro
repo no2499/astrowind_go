@@ -1,0 +1,31 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "潘美慧";
+const mimg = "/images/analyst/at0009.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ MME高階分析師
+    ◎ 2006MME 皮紋學論文集-大腦認知與外語學習研究
+    ◎ 2010MME 膚紋學論文集-大腦認知與外語學習策略
+    ◎ 2018MME 膚紋學論文集以MME的工具探討繪畫分析花與瓶-成人花型與花莖的研究
+    ◎ 公務人員 地方行政研習E學中心邀稿
+    ◎ 幼教企管專欄作者
+    ◎ 幼兒、兒童英語教學25年
+    ◎ 幼兒/兒童英語/託管班師資培訓講師18年
+    ◎ 心理諮詢陪談
+    ◎ 人力提升專案講師
+    ◎ 企業教練
+    ◎ 劍橋大學 University of Cambridge ESOL Examination TKT:PRACTICAL認證</div>
+</Layout>

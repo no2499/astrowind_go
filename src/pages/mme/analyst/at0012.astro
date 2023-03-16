@@ -1,0 +1,20 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "賴芳蓉";
+const mimg = "/images/analyst/at0012.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 賴芳蓉於1999年在英國華威大學獲得幼兒教育與學校管理碩士學位，而後在台灣幼兒教育界服務，並從事皮紋學、學習記憶法與心智繪圖研究。她是早期推廣皮紋學的成員之一，並跟隨賴翠莞博士前往美國推廣皮紋學的破冰之旅。她在台灣期間亦同時進行多項MME的皮紋相關研究。自2005年以來她定居英國利茲，曾任英國中文學校與小學漢語教師，現任英國利茲貝克特大學語言中心漢語講師與亨利王子文法中學漢語老師。</div>
+</Layout>

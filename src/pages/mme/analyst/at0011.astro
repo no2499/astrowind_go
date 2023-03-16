@@ -1,0 +1,22 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "林美禎";
+const mimg = "/images/analyst/at0011.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ MME量身教育國際研究會皮紋分析師
+    ◎ MME 2006年皮紋學論文發表於國家圖書館：兒童繪畫圖像分析與心智探討
+    ◎ 安親老師15年經歷</div>
+</Layout>

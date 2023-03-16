@@ -1,0 +1,25 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "薛珮緹";
+const mimg = "/images/analyst/at0008.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 園所長資歷25年
+    ◎ 蒙特梭利老師25年
+    ◎ 蒙特梭利數學培訓師
+    ◎ 藝術遊戲治療
+    ◎ 情緒的心理治療
+    ◎ MME高階皮紋分析師</div>
+</Layout>

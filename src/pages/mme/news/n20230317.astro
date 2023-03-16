@@ -1,0 +1,20 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mytitle = "2023 MME新網站公告";
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <!-- Content Widget **************** -->
+
+
+改版中，如有任何建議歡迎寫信至： <a href="mailto:8857758@gmail.com">8857758@gmail.com</a> 標題: MME網站改版建議
+
+</Layout>

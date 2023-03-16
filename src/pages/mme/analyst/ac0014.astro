@@ -1,0 +1,28 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "金梅";
+const mimg = "/images/analyst/ac0014.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 學 曆：南京特殊教育師範學院 弱智教育專業
+    ◎ 華東師範大學 中文本科
+    ◎ 教學資歷:任教於廈門市思明區特殊教育學校 學科教研組長15年
+    ◎ 優異表現：全國“特教園丁”榮譽稱號。
+    ◎ 廈門市小學數學骨幹教師
+    ◎ 廈門市優秀班主任
+    ◎ 廈門市思明區教科研獎
+    ◎ 廈門市思明區課改先進工作者
+    ◎ 多次參與學校，省級市級重點課題，課題核心組成員</div>
+</Layout>

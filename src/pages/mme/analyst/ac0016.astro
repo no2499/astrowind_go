@@ -1,0 +1,28 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "劉茂鋒";
+const mimg = "/images/analyst/ac0016.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ MME高級皮紋分析師
+    ◎ MME龍岩研發中心執行長
+    ◎ 國家二級心理諮詢師
+    ◎ 國家青少年抗挫力訓練師
+    ◎ 感統評估師、訓練師
+    ◎ 注意力訓練師
+    ◎ 龍岩市精神衛生中心康復科主任
+    ◎ 龍岩市心理衛生協會秘書長
+    ◎ 龍岩市慧成長教育發起人</div>
+</Layout>

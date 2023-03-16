@@ -1,0 +1,22 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "楊曉鳳";
+const mimg = "/images/analyst/ac0007.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ MME高階分析師 、MME繪畫分析師
+    ◎ 浙江省的名班主任，職稱為高級教師。現就職於浙江省杭州市學軍小學。
+    ◎ 楊曉鳳老師被省市區三級教育行政部門授予首席班主任、班主任工作室領銜人等稱號，並帶領著由省市區三級教育行政部門成立的“楊曉鳳班主任工作室”，帶領三個工作室團隊幾十個老師，與小朋友們同歡樂共成長。曾先後被評為西湖區先進工作者、西湖區功勳班主任、西湖區黨員先鋒模範崗、西湖區第一層次學科帶頭人，杭州市市優秀班主任、杭州市模範班主任等榮譽,還是杭州市教育局最美教師巡講團講師、杭州市教育局家庭教育輔導熱線指導老師。</div>
+</Layout>

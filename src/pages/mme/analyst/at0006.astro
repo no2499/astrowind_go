@@ -1,0 +1,29 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "蔡淑蔚";
+const mimg = "/images/analyst/at0006.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 明星科技大學幼兒保育系畢業
+    ◎ 國北師幼教系研究所
+    ◎ 蒙特梭利教學法修畢
+    ◎ 兒童美術教育研究修業證書
+    ◎ 兒童福利專業人員結業
+    ◎ 教師康樂研習
+    ◎ 國際嬰幼兒按摩講師
+    ◎ 國際月子調理師
+    ◎ 國際嬰幼兒按摩協會指導父母專業講師-國際證照
+    ◎ 現 任： 傑恩幼兒園創辦人 幼稚園教學經歷 21年 MME研究員</div>
+</Layout>

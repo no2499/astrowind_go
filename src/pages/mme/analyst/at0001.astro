@@ -1,0 +1,28 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "賴翠莞 博士";
+const mimg = "/images/analyst/at0001.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+
+  <div>◎ MME量身教育國際研究會創始人
+    ◎ 美國南加州大學榮譽博士
+    ◎ 繪畫分析教育專家
+    ◎ 心理測評工具專家
+    ◎ 高級潛能培訓師
+    ◎ 中國、臺灣、香港、印尼…多家特教學校指導老師與顧問
+    ◎ 臺灣幼稚園教師、園長培訓講師
+    ◎ 廈門湖裡教育局園長儲訓營講師</div>
+</Layout>

@@ -1,0 +1,22 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "吳臻";
+const mimg = "/images/analyst/ac0010.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 小學語文高級教師，曾被評為“廈門市優秀少先隊輔導員”，“廈門市十佳輔導員”、”廈門市小學語文學科帶頭人”。
+    ◎ 小學資優生培訓組員。
+    ◎ 寄語：“真教育是心心相印的活動，唯獨從心裡發出來的，才能打到心的深處。”—— 吳老師用自己的行動詮釋陶行知先生這教育理念。</div>
+</Layout>

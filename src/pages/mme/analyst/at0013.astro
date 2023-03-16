@@ -1,0 +1,20 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "張善美";
+const mimg = "/images/analyst/at0013.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 我是張善美，從事美語教學25年，學習皮紋已經13年。 當初學MME皮紋檢測是想讓我們教學者和家長了解孩子大腦學習風格，用最快速和有效率的方法去啟發孩子們的學習興趣，達到事半功倍輔導的工具。 MME除了皮紋學，還包括了掌紋醫學，繪畫心理學，一併綜合交叉判讀，讓研究更加精準。 自從使用這項工具後，除了了解本身學習歷程是如何跌跌撞撞，去走出現在的一條路，堅持做了自己喜愛的工作25年。 還幫助孩子找到自信，讓家長了解孩子，溝通更加順暢。 就像老師說的，順毛而刷省時省力成效佳，逆毛而刷費時費力成效差。透過皮紋檢測，找出教育的共通語言，做出修正，將會讓人人發揮所長，肯定自己，各司其職，享受人生的美好價值，這樣不是很好嗎？</div>
+</Layout>

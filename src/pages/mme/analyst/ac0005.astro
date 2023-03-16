@@ -1,0 +1,26 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "姚方瑜 (姚豔珍）";
+const mimg = "/images/analyst/ac0005.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 國家二級心理諮詢師
+    ◎ 家庭教育指導師師
+    ◎ 資深企業教練
+    ◎ MME量身教育國際研究會皮紋分析師
+    ◎ 福建省情商研究會青少年生涯規劃工作委員會主任
+    ◎ 經歷 福州市盛榕資訊技術有限公司創始人，服務領域橫跨企業管理、家庭教育和素質教育。接受教練技術課程的專業訓練，憑著內在的愛和接納，在企業教練、個人成長、親子教育、家庭治療、催眠治療、完形治療、繪畫分析、先天潛能的各個領域不斷前行。企業教練與家庭、親子教育雙修的成長過程，形成了獨特的諮詢風格，自2016年7月獲得臺灣MME先天潛能優勢研究員資格，至今已完成近300個個案的積累，尤其擅長于運用皮紋測評技術對厭學孩子進行個性化指導和教育，化解親子矛盾，身心一致地支持更多的個人成長與家庭和諧幸福。
+    ◎ 專長領域 　專長:親子教育、自我探索、生涯輔導、家庭諮商、親子溝通、厭學個案心理治療 諮詢領域:青少年生涯規劃問題、個人成長探索問題、家庭關係問題、親子關係問題(親子關係不良，青少年叛逆，注意力不集中，厭學等)、伴侶情感問題</div>
+</Layout>

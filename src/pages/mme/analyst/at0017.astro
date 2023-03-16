@@ -1,0 +1,27 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "王郁馨";
+const mimg = "/images/analyst/at0017.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 中國教育學會家庭教育專業委員會/家庭教育專業指導師/講師
+    ◎ NPMP國際公益專案管理師
+    ◎ 臺灣家庭生命教育交流推廣學會/副理事長
+    ◎ 台中市品格教育協會/第二屆理事長
+    ◎ 101-106年舉辦「品格教育」寒暑假營隊/舉辦30場「親職講座」
+    ◎ 107年舉辦「覺知專注力」暑期營隊
+    ◎ 各大出版社圖書行銷規劃/業務行銷培訓
+    ◎ 中國大陸各省/覺知專注力課程/教育師培訓</div>
+</Layout>

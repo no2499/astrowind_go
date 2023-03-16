@@ -1,0 +1,22 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "蘇玲𦰡";
+const mimg = "/images/analyst/at0020.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 台灣第一家坐月子中心創辦者
+    ◎ 聖儒幼稚園園長暨創辦人
+    ◎ 致勝力量企業管理股份有限公司業務總監</div>
+</Layout>

@@ -1,0 +1,20 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "魯海紅";
+const mimg = "/images/analyst/ac0017.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 女，學前教育專業，幼稚園高級教師，高級育嬰師，早期教育指導師（高級）。從事幼稚教育27年，目前是專職早教教師。參加了MME繪畫分析、MME大腦先天優勢分析學習。</div>
+</Layout>

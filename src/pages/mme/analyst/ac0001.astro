@@ -1,0 +1,31 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "林彩珠";
+const mimg = "/images/analyst/ac0001.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 廈門市心理諮詢師協會發起人之一、副會長
+    ◎ 廈門睿偲教育創辦人、首席心理諮詢師
+    ◎ 國家二級心理諮詢師
+    ◎ MME先天身心潛能優勢分析高級分析師
+    ◎ MME先天身心潛能優勢分析培訓師
+    ◎ 職業生涯規劃師
+    ◎ 高級人力資源管理師
+    ◎ 精油康復理療師
+    ◎ 【 擅長諮詢方向 】兒童青少年諮詢、中高考心理陪伴、家庭諮詢、親子關係、職業生涯管理諮詢、情緒管理等。
+    ◎ 【 諮詢觀 】以人為本，相信每個人有無限的潛力，相信每個人都擁有自我療愈的能力，我們做的只是幫忙對方看到和清理卡住的點，讓他/她的能量通暢，活出生命的精彩!
+    ◎ 【 諮詢風格 】溫暖、抱持、包容、尊重
+    ◎ 在心理學中浸泡超過10年，跟隨臺灣著名教育與心理學家、MME先天身心潛能測評創始人賴翠莞博士10年，做過上千個MME先天身心潛能分析與心理諮詢個案。經過心理諮詢個案的歷練和洗禮，有一套獨特的諮詢方法。尤其是在兒童青少年諮詢、因材施教、職業生涯管理諮詢及中高考心理陪伴等經驗豐富。 外表嬌小，內在能量卻很大，提倡生活中踐行</div>
+</Layout>

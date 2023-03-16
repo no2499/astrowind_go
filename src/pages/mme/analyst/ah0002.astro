@@ -1,0 +1,29 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "曾慧敏";
+const mimg = "/images/analyst/ah0002.gif";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>◎ 香港新領域潛能發展中心服務總監
+    ◎ 南澳州大學輔導碩士
+    ◎ 香港中文大學心理學士
+    ◎ 美國身心語言程式學高級執行證書
+    ◎ 美國時間線治療師證書
+    ◎ 美國催眠治療師證書
+    ◎ 美國運動機制學會建腦操基礎證書
+    ◎ 中國韋氏兒童智力量表主試員
+    ◎ MME量身教育國際研究會(香港)腦功能檢測分析師
+    ◎ 以色列手診心理學會，香港手診心理學會認證師</div>
+</Layout>
