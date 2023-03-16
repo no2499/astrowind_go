@@ -1,0 +1,59 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/ContentLink.astro';
+import LatestPosts from '~/components/blog/LatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const meta = {
+  title: SITE.title,
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent
+    subtitle2='最新消息'
+    items={[
+      {
+        title: '2018-07-09 繪畫心理分析複訓',
+        link: 'https://mp.weixin.qq.com/s/pzc8NPPQa2gJu0QVJj5vog',
+        description: '說明',
+      },
+      {
+        title: '2018-06-20 2018年ＭＭＥ論文集發售',
+      },
+      {
+        title: '2018-06-20 王晨霞掌紋醫學入門分享會',
+      },
+      {
+        title: '2018-06-08 網站整建中 分析師名單更新',
+      },
+      {
+        title: '2017-06-07 親職講座：孩子的思考改變術暨陽光家庭啟動儀式',
+      },
+    ]}
+    image={{
+      src: import('~/assets/images/vintage.jpg'),
+      alt: 'Vintage Image',
+    }}
+  />
+
+
+
+
+</Layout>

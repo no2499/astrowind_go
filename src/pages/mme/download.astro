@@ -1,0 +1,58 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/ContentLink.astro';
+import LatestPosts from '~/components/blog/LatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const meta = {
+  title: SITE.title,
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+
+<!-- Features2 Widget ************** -->
+
+<Features2
+title="相關檔案下載"
+subtitle="各式研究會文件，開放免費下載"
+highlight=""
+items={[
+  {
+    title: '皮紋採用表',
+    description:
+      '通用版本、繁體 <br><br><a href=#>[下載]</a>',
+    icon: 'flat-color-icons:template',
+  },
+  {
+    title: '皮紋採用表',
+    description:
+      '通用版本、繁體 <br><br><a href=#>[下載]</a>',
+    icon: 'flat-color-icons:template',
+  },
+  {
+    title: '皮紋採用表',
+    description:
+      '通用版本、繁體 <br><br><a href=#>[下載]</a>',
+    icon: 'flat-color-icons:template',
+  },
+]}
+/>
+
+
+
+
+
+</Layout>

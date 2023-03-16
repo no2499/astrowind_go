@@ -1,0 +1,79 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/ContentLink.astro';
+import LatestPosts from '~/components/blog/LatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const meta = {
+  title: SITE.title,
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent
+    subtitle2='活動花絮'
+    items={[
+      {
+        title: '2018-08-03 福州MME研究會成立了',
+        description: '說明',
+      },
+      {
+        title: '2018-06-08 回顧:2018年MME大會',
+      },
+      {
+        title: '2018-06-08 回顧:2013年MME大會',
+      },
+      {
+        title: '2018-06-07 回顧:2010年MME大會',
+      },
+      {
+        title: '2018-06-06 回顧:2006年MME大會',
+      },
+      {
+        title: '2018-07-05 桃園市助人促進協會',
+      },
+      {
+        title: '2018-06-05 回顧:王晨霞醫師初階掌紋醫學分享會',
+      },
+      {
+        title: '2018-06-05 回顧:2009國際人類學與民族學聯合會',
+      },
+      {
+        title: '2018-06-04 回顧:國際掌紋醫學研討會',
+      },
+      {
+        title: '2018-06-04 回顧:2007匈牙利行為及醫學生物數據會議',
+      },
+      {
+        title: '2018-06-04 回顧:特教與弱勢公益活動',
+      },
+      {
+        title: '2017-06-05 陽光家庭啟動儀式',
+      },
+    ]}
+    image={{
+      src: import('~/assets/images/vintage.jpg'),
+      alt: 'Vintage Image',
+    }}
+  />
+
+
+
+
+</Layout>

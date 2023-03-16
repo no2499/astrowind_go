@@ -1,0 +1,328 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/ContentLink.astro';
+import LatestPosts from '~/components/blog/LatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const meta = {
+  title: SITE.title,
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+
+  <Features2
+  title="分析師名單"
+  subtitle="台灣分析師"
+  highlight=""
+  items={[
+    {
+      title: '賴翠菀',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '賴翠媛',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '陳蘊文',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '范姜之秀',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '呂玉娟',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '新竹傑恩(蔡淑蔚)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '曾春梅',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '薛佩緹',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '潘美慧',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '黃鈴諭',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '林美禎',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '賴芳蓉',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '張善美',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '張明慧',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '胡秀瑜',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '趙翊君',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '王郁馨',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '劉文龍',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '智力新創(郭秉逸',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '蘇玲𦰡',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '許月里',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+  ]}
+  />
+
+  <Features2
+  title=""
+  subtitle="香港分析師"
+  highlight=""
+  items={[
+    {
+      title: '張素嫻(香港)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '香港新領域(曾慧敏)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '利佩兒(香港)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '關慧瑕(澳門)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '錢曉玲(澳門)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '香港永恆醫療(孔憲明)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+
+    ]}
+  />
+
+  <Features2
+  title=""
+  subtitle="中國分析師"
+  highlight=""
+  items={[
+    {
+      title: '林彩珠(廈門)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '李春苗(廈門)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '李素珍(廈門)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '廈門集美特教(楊立雅)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '姚豔珍(福州)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '程子人(蘇州)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '楊曉鳳(杭州)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '杭州特教(傅佳麗)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '萬維婉(昆明)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '吳臻(廈門)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '蘇碧洋(泉州)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '萬玉紅(泉州)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '李淩(廣州)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '廈門思明特教(金梅)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '貴陽e智團隊(汪建琪)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '劉茂鋒(龍岩)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '鲁海红(龍岩)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '黃萍(龍岩)',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+    {
+      title: '一龍科技',
+      description:
+        '',
+      icon: 'flat-color-icons:voice-presentation',
+    },
+
+    ]}
+  />
+
+</Layout>

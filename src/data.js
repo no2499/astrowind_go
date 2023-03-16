@@ -16,49 +16,15 @@ export const headerData = {
     },
     {
       text: '活動花絮',
-      links: [
-        {
-          text: '建構中',
-          href: getPermalink('/landing/saas'),
-        },
-      ],
+      href: '/mme/event',
     },
     {
       text: '檔案下載',
-      href: '#',
+      href: '/mme/download',
     },
     {
       text: '分析師名單',
-      href: '#',
-    },
-    {
-      text: '#',
-      links: [
-        {
-          text: 'Features',
-          href: '#',
-        },
-        {
-          text: 'Pricing',
-          href: '#',
-        },
-        {
-          text: 'About us',
-          href: '#',
-        },
-        {
-          text: 'Contact',
-          href: '#',
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
-      ],
+      href: '/mme/analyst',
     },
     {
       text: '所有文章',

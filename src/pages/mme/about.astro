@@ -1,48 +1,266 @@
 ---
+import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 
-import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/ContentLink.astro';
+import LatestPosts from '~/components/blog/LatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import boss from '~/assets/images/aboutboss.jpg';
-import { headerData } from '~/data';
+
 const meta = {
-  title: "理事長的話",
+  title: SITE.title,
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
 };
 ---
 
 <Layout {meta}>
-  <Fragment slot="header">
-    <Header
-      {...headerData}
-      showRssFeed
-      showToggleTheme
-      position="left"
-    />
-  </Fragment>
-  <!-- Hero2 Widget ******************* -->
-  
-  <Hero
-  >
-    <Fragment slot="title">
-      理事長的話
-    </Fragment>
+  <!-- Content Widget **************** -->
 
-    <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">現在就讓我們一起來探討腦的心智與發展狀況吧!因為我們都要成為腦的最主人!</span><br /><span>
-        MME檢測文析是為了明白大腦的相互運作下,所產生的:性格分析﹑人際關係﹑身體狀況﹑腦與認知﹑學習風格﹑腦的優勢策略與未來成就｡每一個人的大腦都有自己一套獨一無二的思考模式,這思考模式在運作上身受教養環境的刺激而將引發了化學變化,如敏感﹑情緒﹑神經的放電不均﹑某種能力缺失...等反應,它讓我們在學習上與先天性格上產生個別差異化｡然而我們的腦扔會努力以它的優勢取得成就感,但若受環境上不當的教導與刺激,他很可能形成初期學習干擾或是行為偏差｡
-          <br><br>
-        MME研發中心經十幾年誠信研究與訪談的量化統計,以腦神經心理學為學習背景將研究成果程式化後,以電腦程式排列組合所以做的評估報告｡接受此項檢測的你需知道的是:後天的環境因素及教養策略,扔是有價值的,因他是評估此人先天潛能運作時受到的衝擊,所產生出腦的因果回饋,表現在行為﹑認知上的反應,是腦科學與腦神經心理學的整合所轉換出的語言,[不是算命!]｡
-      </span>
-      </Fragment>
+  <Steps
+    title="台北市量身教育國際研究會沿革"
+    items={[
+      {
+        title: '◎台北市量身教育國際研究會由賴翠莞老師發起',
+        description:
+          '立案字第:北市社會自第2021號 成立日期2002年4月21日',
+        icon: 'tabler:package',
+      },
+      {
+        title: '◎中華量身教育國際研究會由賴翠莞老師發起',
+        description:
+          '立案字第:台內社字第1000181652號 成立日期2011年8月20日',
+        icon: 'tabler:package',
+      },
+      {
+        title: '緣起',
+        description:
+          '緣起1996年於新莊永錡幼稚園擔任園長(創園園長)時，開始接觸皮紋研究，全校師生、家長做了五百多個案件，經訪談確認有它的研究價值，故而堅持於此工具的研究，賴理事長以不妥協的態度研究下去，是她深信MME的價值，至今已有17年的漫長研究與累積15萬以上的案例。創會理事長賴翠莞有豐富的實務教學經驗做歸納整理，有此檢測工具的整合，在教學策略運用上，更能讓因材施教的成效彰顯，因而奠定皮紋工具運用於教育上之深厚意義。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '1998年12月(1998年)籌備因材施教園-生活家幼稚園，新生入學一律做皮紋檢測，全體教師參與『皮紋學對應腦認知研究與行為氣質學整合探討』之研究，奠定因材施教學所實踐之基礎。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '1999年2月(西元1999年)台北市生活家幼稚園成立，所有檢測經費由生活家負責人自行負擔，成為全省第一家以皮紋為入學檢測工具之實踐學校，並與全省有許多家的園所做經驗交流與教學分享。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '台北市',
+        description:
+          '2001年(西元2001)籌備台北市量身教育國際研究會，2002年5月(西元2002年)完成社會局立案(北市社會字第2021號)，成為台灣第一個以皮紋學研究的國際研究會。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2002年11月(西元2000)接受中時晚報專訪-台北市生活家幼稚園為量身教育的實驗學校。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2002年經醫學專家指導，完成腦與認知的交叉判讀，為皮紋與腦科學的新發現，並於2003年3月發行家長教養推廣手冊-2萬冊。幫助家長建立腦與認知發展在教育上的運用之教養觀念。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '電腦軟體判讀',
+        description:
+          '2002年10月(西元2002年) 規劃電腦軟體判讀機制，11月成立工程部，2003年3月第一版完成，之後陸續有修正至今。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '美國',
+        description:
+          '2002年(西元2003年)與美國環球學會合作研究，成立美國量身教育國際研究研究分會，並在亞太教育年會中發表研究論文、美國教育博覽會中做教育展，深受致謝與好評價。(這是我自以為是好策略，因中國人崇洋觀念，只要由美國打回來的知識，才會被使用，所以才花許多時間與金錢這麼做。)',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2003年2月(西元2001) 向智慧財產局申請量身教育研究會的商標註冊專利權。『MME先天潛能檢測』工具卽正式授名，量身教育研究會簡稱MME。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2003年7月(西元2003年) MME根據中國民族膚紋學一書-(上海醫科大學張海國教授著作2002年出版)更正指紋、腳紋的代表符號，並召集會員告知更正事宜，MME也因與世界皮紋學研究上有共同的符號為語言，所以才能正式與全世界的學者共同分享會的成就。<br><br>Ps.美國膚紋學第一次大會於1977年3月28~31日召開膚紋學學術研討會。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '廈門',
+        description:
+          '<ul><li>2003年8月(西元2003年)在廈門大學公開發表，為MME進中國大陸的第一站。之後陸續做學術發表，同時參與研究單位也陸續增加中。</li><li>2004年首屆掌紋醫學醫學發表在泰國舉辦，會中王晨霞醫師發表愛因斯坦的掌紋診斷，頗得國際肯定，MME賴老師發表皮紋對腦的診斷，這兩個會成為姐妹會，共同爲指掌紋醫學研究而努力。並與2006年7月開第二次發表會於上海，賴理事長發表皮紋與唐氏症的研究，以 103個唐氏症者皮紋做統計與研究，得晨霞掌紋醫學大會之會員熱烈迴響。</li><li>2005年武漢華中大學邀約，感覺統合失調的皮紋研究與輔導。</li><li>2005年第五屆華人心理學會，會中受東吳大學王文英教授的肯定與鼓勵。</li><li>2005年受重慶師範大學邀約，在重慶大學心理學研究所與研究生探討皮紋工具用於心理學的魅力，頗得師生肯定。</li><li>2006年10月28~11/2參加2006海峽兩案醫療合作與交流論壇，發表『皮紋檢測運用於小兒心智科門診之價值』，希望藉此幫助鄉村醫療團隊，深受鄉間醫療團隊的激情反應，若能得正規推廣，將受益中國許多孩子。</li><li>2006.10月與廈門教育局學術交流，賴翠莞老師發表『腦潛能檢測與行為輔導』並成立實驗學校，參與研究。</li></ul>',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2004年2月(西元2004年)MME接受民視異言堂的專訪，代表會研究上輝煌的成果。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '馬來西亞',
+        description:
+          '2004年5月(西元2004年)在馬來西亞作教育博覽會，深受好評，媒體爭相報導。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '香港',
+        description:
+          '2005年6月(西元2004年)香港量身教育國際研究會-第一個研究機構成立。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2005年3月((西元2004年)台灣巧連智雜誌-『寶寶與我』刊登量身教育的研究特刊。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2005年10月(西元2005年)行為醫學生物數據國際首屆會議(簡稱IBMB)在美國拉斯維加斯開成立大會，MME發表『皮紋學用於自閉症的研究』此項研究為MME從自閉症的孩子中研究腦與皮紋學判讀定位，去證明研究上的精準度與有效度之依據。2006年在上海舉辦第2屆大會，2007年8月在布達佩斯舉辦第三屆大會。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '以色列',
+        description:
+          '2006年以色列量身教育國際研究會分會成立。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2006年9月30、10月1日(西元2006年)在台灣國立國家圖書館發表MME首屆國際論文發表，有2百多人參與盛會，有5個國家的頂尖專家、學者代表參加，成為台灣膚紋學研究上第一個發行論文的研究機構。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2006年10月，參加兩岸醫療合作與學術交流論壇，發表『皮紋學用於小兒心智科門診的價值』，發表完畢，深受許多的醫師的肯定，許多鄉間診所醫師們認為此項工具值得做再深入探討與研究。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2007年8月(西元2007年)第三屆世界行為醫學生物數據國際會議在匈牙利召開，MME發表皮紋學用於小兒心智科的價值。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2007年3月研發中心完成皮紋醫學整合版軟體-腦力式身心語言潛能檢測正式推出，分爲兒童版、青少年版、成人版、特教版。從此不斷更新修正中。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '印尼分會',
+        description:
+          '2008年3月中(西元2008年)印尼量身教育國際研究會分會成立。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2008年8月(西元2008年)陽光少年專案開始，慶賀MME青少年版的研究完成，實施青少年的皮紋諮詢免費方案，接受國中輔導室申請，目前9月中旬已在研究會完成四場免費諮詢。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2009年7月28日參加第十六屆膚紋學大會，在大會發表論文題目:皮紋學工具運用於特教教育的價值與策略輔導。此項研究是MME歷經10年的研究成果，研究目的是希望對特殊學校的兒童學習策略上的幫助而努力。<br><br>Ps.參與此項研究的學校為:中國廈門市特教學校-思明特教學校代表、香港正覺蓮社佛教普光學校代表、台灣台北縣自閉症協會代表。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2010年7月24-25日MME召開第二屆國際論文大會，於國家圖書館會議廳舉行，兩岸學者共襄盛舉，讓膚紋學的活力再現-開啟皮紋學用於醫學、教育、心理整合的門檻。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2010年MME陽光少年專案公益活動開始啟動，台灣完成第一批受訓，隨後進入校園指導，2011年廈門湖里區禾山中學、貴陽十三中學，都陸續開辦。<br><br>MME希望開啟青少年-成年禮之心理需求，有效的輔導青少年。因為他們可藉由MME檢測工具，認識自己的腦與行為的關係，重新獲得生命的價值與開啟自我學習的智慧之門。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2013年7月13-14日理事長參加中國遺傳學會-全國膚紋學研究協作組第八次論文研討會。中國.河南.新鄉-河南師範大學，發表題目-膚紋學運用於教育、心理、醫學的整合價值之分享，期盼兩岸學者的共同關懷。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '新加坡',
+        description:
+          '2013年8月新加坡MME研究會正式成立，推廣MME工具的全面性國際化。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2013年5月MME與沙盤治療做第一次接觸，由劉建新教授創辦之心靈花園開啟，廈門心靈花園督導-李春苗博士指導，與MME檢測整合研究。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2013年11月9-10日MME兩岸膚紋學論文大會於台灣-台灣大學召開。<br><br>MME的愛與貢獻-皮紋學運用於醫學、教育、心理的論文發表。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2015.07.12完成新版修正',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2015.07.17杭州皮紋合作事業正式啟動-繪畫分析班第一屆、2015年11月21日皮紋學啟動。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2015.07.24 香港晨暉特教學校合作研究正式啟動。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2015.10.12 檢測報告再次修改版本之啟動日，今仍在進一步修改中，力求更好。',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '',
+        description:
+          '2018.04 在中國大陸開辦皮紋大會,歡迎參加',
+        icon: 'tabler:building-arch',
+      },
+      {
+        title: '我們繼續在前進！',
+        icon: 'tabler:check',
+      },
+    ]}
+    image={{
+      src: import('~/assets/images/creativity.jpg'),
+      alt: 'Steps image',
+    }}
+  />
 
-    <Fragment slot="image">
-      
-    </Fragment>
-  </Hero>
 
-  <!-- CallToAction Widget *********** -->
-  <div style="width:800px; margin:0 auto;"><img src="/images/aboutboss.jpg" width="400" alt="image description2" /></div>
+
 
 </Layout>
