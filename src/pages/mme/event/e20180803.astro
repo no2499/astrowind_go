@@ -1,0 +1,26 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mytitle = "福州MME研究會成立了";
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <!-- Content Widget **************** -->
+
+
+
+  <img src="/images/event/d2832dde2c6925a33e173a15895dec69.gif">
+  <div>
+    <p>親愛的會員們!!</p>
+    <p>期待已久的福州研究會已經於7/27成立，歡迎相互告知此</p>
+    <p>好訊息。同時也成立福州特教組研究單位，讓福州特教有福</p>
+  </div>
+
+</Layout>

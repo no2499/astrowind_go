@@ -1,0 +1,21 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mytitle = "回顧:2013年MME大會";
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <!-- Content Widget **************** -->
+
+
+  <img src="/images/event/5758d2e323075305c7981d3faae1b2f5.gif">
+  <img src="/images/event/a6149b6bb838ac492b859257583286ad.gif">
+
+</Layout>

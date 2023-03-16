@@ -1,0 +1,22 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mytitle = "2018年ＭＭＥ論文集發售";
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <!-- Content Widget **************** -->
+
+
+<img src="/images/news/d9eb01852a6bbf23049be50f773d5d9e.gif">
+<img src="/images/news/d91f51290bf73c4471484144d78d6ccf.gif">
+<img src="/images/news/d35546b49a0c178f3f4b63509026b752.gif">
+
+</Layout>

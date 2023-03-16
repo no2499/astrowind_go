@@ -1,0 +1,19 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mytitle = "回顧:2009國際人類學與民族學聯合會";
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <!-- Content Widget **************** -->
+
+  <img src="/images/event/921ecb2d3f8d764445991d765d942642.gif">
+
+</Layout>
