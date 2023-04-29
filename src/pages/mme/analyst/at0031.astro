@@ -1,0 +1,44 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "劉祐瑋";
+const mimg = "/images/analyst/at0031.png";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">
+        <img src={mimg} class="object-scale-down w-96">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} 1986.11.02</div>
+        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
+          <p>任職：錠嵂保險經紀人 區經理</p><p>
+          年資：15年</p><p>
+          畢業學校：淡江大學 保險系畢</p><p>
+          目前有證照：</p><p>
+          人身保險</p><p>
+          財產保險</p><p>
+          外幣非投資型</p><p>
+          投資型</p><p>
+          FchFP財務特許顧問師</p><p>
+          家族傳承財務規劃師</p><p>
+          信託專業業務人員</p><p>
+          </p><p>
+          興趣：健身、閱讀、演講</p><p>
+          以皮紋工具幫助保險業者有更優質的職業素養</p>
+          
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>

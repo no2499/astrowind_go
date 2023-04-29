@@ -3,7 +3,7 @@ import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 
 const mname = "呂玉娟";
-const mimg = "/images/analyst/at0005.gif";
+const mimg = "/images/analyst/at0005.jpg";
 const mytitle = "分析師:"+mname;
 const meta = {
   title: SITE.title + " {" + mytitle + "}",
@@ -14,9 +14,24 @@ const meta = {
 ---
 
 <Layout {meta}>
-<div>{mname}</div>
-  <img src={mimg}>
-  <div>◎ 現任何嘉仁創意建構積木課程講師
-    ◎ 來得幼兒園親職教養輔導講師（藉由皮紋檢測使家長在教養幼童更為得心應手）
-    ◎ MME量身教育國際研究會高階分析師</div>
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">
+        <img src={mimg} class="object-scale-down w-96">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} 1974.11.08</div>
+        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
+          <p>現任:</p><p>
+          何嘉仁LASY建構積木講師</p><p>
+          來得幼兒園講師</p><p>
+          高爾工作室負責人</p><p>
+          曾任:</p><p>
+          三峽兔子屋畫室捏塑講師</p><p>
+          台北橋幼幼兒園建構積木講師</p>
+          
+        </a>
+      </div>
+    </div>
+  </div>
 </Layout>

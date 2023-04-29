@@ -2,8 +2,8 @@
 import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 
-const mname = "";
-const mimg = "/images/analyst/at000.gif";
+const mname = "張珈雯";
+const mimg = "/images/analyst/at0023.jpg";
 const mytitle = "分析師:"+mname;
 const meta = {
   title: SITE.title + " {" + mytitle + "}",
@@ -14,7 +14,32 @@ const meta = {
 ---
 
 <Layout {meta}>
-<div>{mname}</div>
-  <img src={mimg}>
-  <div></div>
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">
+        <img src={mimg} class="object-scale-down w-96">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} 1980.07.16</div>
+        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
+          <p>現職：</p><p>
+          思達數學光復創始校、思達數學景美分校、</p><p>
+          思達數學板橋分校學齡前兼職教師</p><p>
+          中華生活數學推廣學會兼職教師</p><p>
+          樂桃桃培訓機構幼兒圖形課程設計暨培訓教師</p><p>
+          經歷：</p><p>
+          MME研究員</p><p>
+          台北市、新北市國小生活數學晨間／課後社團教師</p><p>
+          中國杭州幼兒數學培訓教師</p><p>
+          著作：</p><p>
+          大柱子的生活數學 專題：七巧板</p><p>
+          大柱子的生活數學 專題：六形七色版(主題操作篇)</p><p>
+          大柱子的生活數學 專題：六形七色版(示範圖庫篇)</p><p>
+          </p><p>
+          思達數學：https://www.fun-123.com/</p>
+          
+        </a>
+      </div>
+    </div>
+  </div>
 </Layout>

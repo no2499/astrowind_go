@@ -3,7 +3,7 @@ import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 
 const mname = "張明慧";
-const mimg = "/images/analyst/at0014.gif";
+const mimg = "/images/analyst/at0014.png";
 const mytitle = "分析師:"+mname;
 const meta = {
   title: SITE.title + " {" + mytitle + "}",
@@ -14,24 +14,52 @@ const meta = {
 ---
 
 <Layout {meta}>
-<div>{mname}</div>
-  <img src={mimg}>
-  <div>◎ 中國文化大學中文系文藝創作組暨青少年兒童福利學系畢業
-    ◎ 世新大學社會發展所碩士
-    ◎ MME高階分析師
-    ◎ 南洋台灣姊妹會名譽理事
-    ◎ 永齡文教基金會社工諮詢委員
-    ◎ 台灣性別平等教育協會理事
-    ◎ 台灣兒童發展協會常務監事
-    ◎ 台灣兒童發展協會馬匹輔助教育中心負責人
-    ◎ 台灣馬術治療中心治療性騎乘初級教練
-    ◎ 治療性桌遊設計師
-    ◎ 皮紋論文與研究興趣
-    ◎ 皮紋分析應用於家庭輔導
-    ◎ 皮紋分析如何協助感覺統合失調兒童
-    ◎ 皮紋分析如何協助安置機構兒童與成癮青少年
-    ◎ 桌遊設計與工作坊
-    ◎ 如何應用桌遊調整思考模式
-    ◎ 透過桌遊找尋自己，自我覺察與自我改變
-    ◎ 桌遊設計顧問</div>
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">
+        <img src={mimg} class="object-scale-down w-96">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} 1971.10.18</div>
+        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
+          <p>學  歷</p><p>
+          中國文化大學中文系文藝創作組暨青少年兒童福利學系畢業</p><p>
+          世新大學社會發展所碩士</p><p>
+          現  職</p><p>
+          南洋台灣姊妹會名譽理事</p><p>
+          永齡文教基金會社工諮詢委員</p><p>
+          台中市政府兒少科督導</p><p>
+          台灣性別平等教育協會監事</p><p>
+          花蓮縣政府社會處及各中心督導</p><p>
+          台灣兒童發展協會馬匹輔助教育中心負責人</p><p>
+          台灣馬術治療中心治療性騎乘初級教練</p><p>
+          桌遊設計與應用於輔導發展</p><p>
+          兒少發展課程講師、性別平等教育、多元文化、青少年輔導、兒童潛能開發與親職相關課程講師，桌遊設計與應用於輔導與療癒</p><p>
+          皮紋分析與應用-感覺統合、家庭輔導、青少年輔導</p><p>
+          實務工作經驗</p><p>
+          台灣兒童發展協會發起人暨理事長91-96 </p><p>
+          花蓮縣外籍配偶家庭服務中心執行長98-99</p><p>
+          永齡文教基金會社工諮詢委員98-112</p><p>
+          家扶基金會外聘督導98-112</p><p>
+          台中市新移民中心與據點評鑑委員101-108</p><p>
+          中華民國救世慈善協會外聘社工督導102-105,108</p><p>
+          台中市政府婦幼科外聘督導102-108</p><p>
+          花蓮更生保護會外聘督導104-108</p><p>
+          台中市政府社工科外聘督導107-111</p><p>
+          社團法人臺中市艾馨婦女協進會外聘社工督導107-110</p><p>
+          慈濟大學社工實習督導</p><p>
+          中國文化大學社工實習督導107</p><p>
+          勵馨基金會方案督導108</p><p>
+          桌遊設計與應用講師</p><p>
+          生命源關懷協會理事長112</p><p>
+          台灣性別平等教育協會副理事長112</p><p>
+          遊戲設計: 扮家家遊、馬到成功、臭屁皇后、翻滾飯糰、好時堂、</p><p>
+          2018年兩岸學術發表-皮紋學與馬匹輔助應用於安置兒童輔導</p><p>
+          金牌飼養員 ILE服務犬訓練中心 無尾熊顧問有限公司</p><p>
+          聯絡方式(e-mail) koaladc1@gmail.com.tw</p>
+          
+        </a>
+      </div>
+    </div>
+  </div>
 </Layout>

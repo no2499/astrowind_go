@@ -2,8 +2,8 @@
 import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 
-const mname = "";
-const mimg = "/images/analyst/at000.gif";
+const mname = "李玉婷";
+const mimg = "/images/analyst/at0022.png";
 const mytitle = "分析師:"+mname;
 const meta = {
   title: SITE.title + " {" + mytitle + "}",
@@ -14,7 +14,23 @@ const meta = {
 ---
 
 <Layout {meta}>
-<div>{mname}</div>
-  <img src={mimg}>
-  <div></div>
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">
+        <img src={mimg} class="object-scale-down w-96">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} 1981.05.07</div>
+        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
+          <p>畢業於實踐大學國際貿易系，</p><p>
+          從事銀行業務，有16年完整的銀行專業經歷。</p><p>
+          任職於國泰世華銀行，喜歡與人互動，</p><p>
+          2018年畢業於ACMA學院的國際績效教練。</p><p>
+          專長在皮紋與指引的整合。nt16655@cathaybk.com</p><p>
+          工作服務項目：信用卡、基金、保險、證券、基金理財、房貸、小信</p>
+          
+        </a>
+      </div>
+    </div>
+  </div>
 </Layout>

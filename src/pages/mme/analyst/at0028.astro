@@ -1,0 +1,44 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "黃惠梅";
+const mimg = "/images/analyst/at0028.png";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">
+        <img src={mimg} class="object-scale-down w-96">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} May 1973.2.26</div>
+        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
+          <p>一、自我專長</p><p>
+          服裝設計、服裝打版、穿搭教學、腦神經心理對色彩的暗示與服飾上的運用</p><p>
+      </p><p>
+      二、學經歷</p><p>
+          1.畢業於國立宜蘭頭城家商服裝科</p><p>
+          2.西元2000創立塔圖國際開發有限公司</p><p>
+           主要業務為承接國內專櫃品牌的設計及生產(ODM)，以接單形式經營逾20年。</p><p>
+          3.西元2019年創立網路品牌HAVE</p><p>
+      </p><p>
+      三、目前從事工作</p><p>
+          自營網路品牌～HAVE</p><p>
+          </p><p>
+      四.服務網站聯結</p><p>
+         https://www.have2019.com/</p>
+      
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>

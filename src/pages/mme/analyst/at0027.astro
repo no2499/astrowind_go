@@ -1,0 +1,39 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "李苔菁";
+const mimg = "/images/analyst/at0027.jpg";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">
+        <img src={mimg} class="object-scale-down w-96">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} 1982.03.11</div>
+        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
+          <p>無尾熊潛能開發中心LASY積木.桌遊講師15年</p><p>
+          台灣兒童發展協會課程講師</p><p>
+          海星國小寒暑期桌遊營隊講師</p><p>
+          台灣兒童暨家庭扶助基金會親子共學課程兒童課程講師</p><p>
+          中華民國救世慈善協會寒暑期潛能開發課程講師</p><p>
+          洄瀾親子館多元文化教育課程外聘講師</p><p>
+          家扶保母資源中心志工培訓LASY積木講師</p><p>
+          禪光育幼院潛能開發講師</p><p>
+          幼兒潛能開發/研發桌遊設計與輔導</p>
+          
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>

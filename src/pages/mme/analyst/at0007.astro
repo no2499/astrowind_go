@@ -3,7 +3,7 @@ import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 
 const mname = "曾春梅";
-const mimg = "/images/analyst/at0007.gif";
+const mimg = "/images/analyst/at0007.png";
 const mytitle = "分析師:"+mname;
 const meta = {
   title: SITE.title + " {" + mytitle + "}",
@@ -14,12 +14,20 @@ const meta = {
 ---
 
 <Layout {meta}>
-<div>{mname}</div>
-  <img src={mimg}>
-  <div>◎ 中台技術學院幼保系畢業
-    ◎ 曾任台中愛兒園托兒所 混齡角落教學保育員
-    ◎ 曾任台北佳美幼稚園 主題教學實習保育員
-    ◎ 曾任台北巧天才幼兒園 蒙特梭利教學保育員
-    ◎ 現任MME高階研究員、專職分析師
-    ◎ 研究運用範圍家庭、婚姻、掌紋醫學</div>
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">
+        <img src={mimg} class="object-scale-down w-96">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} 1975.02.19</div>
+        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
+          <p>1.自我專長-MME皮指紋分析（家庭諮商）</p><p>
+          2.學經歷-中台科技大學幼保系畢、曾任職台北市幼天才蒙特梭利幼兒園、新北市新佳美主題教學幼兒園、台中愛兒園角落教學幼兒園、全職家庭主婦。</p><p>
+          3.目前從事工作-專職MME研究員&分析師。</p>
+          
+        </a>
+      </div>
+    </div>
+  </div>
 </Layout>

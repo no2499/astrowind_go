@@ -1,0 +1,47 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "賴敏傑";
+const mimg = "/images/analyst/at0030.png";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">
+        <img src={mimg} class="object-scale-down w-96">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} 1982.09.05</div>
+        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
+          <p>蒙特梭利CMF師資結訓</p><p>
+          國際嬰幼兒按摩協會IAIM師資結訓</p><p>
+          新竹教育大學園長教育訓練合格</p><p>
+          課後照顧與輔導師資結訓</p><p>
+          培基文教基金會-品格教育師合格</p><p>
+          卡內基-親子溝通技巧證書</p><p>
+          經歷：</p><p>
+                MME中華量身教育國際研究會皮指紋分析師及繪畫分析師</p><p>
+                江婦產科嬰幼兒按摩講師</p><p>
+                社區講座-蒙氏與家庭的結合講師</p><p>
+                東莒國小附幼特聘講師</p><p>
+                竹南李科永圖書館親子律動講師</p><p>
+                丰之樂人文教育館體能講師</p><p>
+                至愛服務協會愛心課輔列車師資培訓講師</p><p>
+          論文發表：</p><p>
+          2013年皮紋學用於醫學、教育、心理三合一整合探討論文大會</p><p>
+          2018年兩岸膚紋學論文發表大會-廈門會議</p>
+          
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>

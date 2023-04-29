@@ -1,0 +1,42 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "謝佩璆";
+const mimg = "/images/analyst/at0026.jpg";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">
+        <img src={mimg} class="object-scale-down w-96">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} Eros 1969 04.21</div>
+        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
+          <p>1.自我專長：室內設計、繪畫</p><p>
+          2.學經歷：</p><p>
+          1987復興美工畢、2021/2022/2023參加過三次畫展</p><p>
+          1998~2023 竑度設計室內裝修股份有限公司設計總監</p><p>
+          2006 參與MME首屆國際論文發表研究員之一</p><p>
+          2013皮紋學與色彩分析心理學研究 繪畫分析系列研究員</p><p>
+          2018室內裝修專業設計、施工技術人員-乙級技術士、</p><p>
+          2019-20國際扶輪3521地區19-20年度交通安全闖關體驗活動-副執行長</p><p>
+          2020-21國際扶輪3521地區20-21年度兒童快樂成長GOOODNEWS[交通安全+健康教育]-執行長</p><p>
+          2021-22國際扶輪3521地區21-22年度兒童安全宣導體驗活動[交通安全、災害預防篇]-主委、中安扶輪社21-22年度-社長</p><p>
+          2022-23國際扶輪3521地區九合一社區服務活動[兒童安全宣導體驗活動-執行長、地區歌唱聯誼-主委]</p><p>
+          3.目前從事工作：竑度設計室內裝修公司設計總監（25年）</p>
+          
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>

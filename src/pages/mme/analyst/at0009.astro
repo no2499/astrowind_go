@@ -3,7 +3,7 @@ import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 
 const mname = "潘美慧";
-const mimg = "/images/analyst/at0009.gif";
+const mimg = "/images/analyst/at0009.png";
 const mytitle = "分析師:"+mname;
 const meta = {
   title: SITE.title + " {" + mytitle + "}",
@@ -14,18 +14,35 @@ const meta = {
 ---
 
 <Layout {meta}>
-<div>{mname}</div>
-  <img src={mimg}>
-  <div>◎ MME高階分析師
-    ◎ 2006MME 皮紋學論文集-大腦認知與外語學習研究
-    ◎ 2010MME 膚紋學論文集-大腦認知與外語學習策略
-    ◎ 2018MME 膚紋學論文集以MME的工具探討繪畫分析花與瓶-成人花型與花莖的研究
-    ◎ 公務人員 地方行政研習E學中心邀稿
-    ◎ 幼教企管專欄作者
-    ◎ 幼兒、兒童英語教學25年
-    ◎ 幼兒/兒童英語/託管班師資培訓講師18年
-    ◎ 心理諮詢陪談
-    ◎ 人力提升專案講師
-    ◎ 企業教練
-    ◎ 劍橋大學 University of Cambridge ESOL Examination TKT:PRACTICAL認證</div>
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">
+        <img src={mimg} class="object-scale-down w-96">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} 1970.07.14</div>
+        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
+          <p>英語教學30年師資培訓講師25年/培訓業運營25年</p><p>
+          兩岸五地專題研究員/新北市政府專案講師</p><p>
+          補教協會專案講師/幼教協會專案講師</p><p>
+          遊戲化高效能團隊賦能教練</p><p>
+          </p><p>
+          腦力測評高階分析師</p><p>
+          管理系統測試工程師</p><p>
+          腦力賦能教練-(一對一、團隊培訓)</p><p>
+          外籍移工與長期照護教練陪伴</p><p>
+          幼兒、兒童英語教學/英語師資培訓/ </p><p>
+          </p><p>
+          2022 讓孩子爭氣你很神氣的親子繪畫樹(親子動力) </p><p>
+          2010MME 皮紋學論文集 (腦認知與外語學習)</p><p>
+          2013MME 膚紋學論文集 (腦認知與外語學習策略輔導)</p><p>
+          2018MME 論文集發表者 (繪畫分析)</p><p>
+          公務人員 地方行政研習E學中心邀稿</p><p>
+          幼教企管專欄作者</p><p>
+          劍橋大學  University of Cambridge ESOL Examination TKT:PRACTICAL認證</p>
+          
+        </a>
+      </div>
+    </div>
+  </div>
 </Layout>

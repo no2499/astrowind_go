@@ -3,7 +3,7 @@ import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 
 const mname = "林美禎";
-const mimg = "/images/analyst/at0011.gif";
+const mimg = "/images/analyst/at0011.png";
 const mytitle = "分析師:"+mname;
 const meta = {
   title: SITE.title + " {" + mytitle + "}",
@@ -14,9 +14,20 @@ const meta = {
 ---
 
 <Layout {meta}>
-<div>{mname}</div>
-  <img src={mimg}>
-  <div>◎ MME量身教育國際研究會皮紋分析師
-    ◎ MME 2006年皮紋學論文發表於國家圖書館：兒童繪畫圖像分析與心智探討
-    ◎ 安親老師15年經歷</div>
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">
+        <img src={mimg} class="object-scale-down w-96">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} EVA  1975.12.16</div>
+        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
+          <p>◎MME量身教育國際研究會資深皮紋分析師 </p><p>
+          ◎ MME 2006年皮紋學論文發表於國家圖書館：兒童繪畫圖像分析與心智探討 </p><p>
+          ◎ 安親老師15年經歷</p>
+          
+        </a>
+      </div>
+    </div>
+  </div>
 </Layout>

@@ -1,0 +1,68 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "黎乃滌";
+const mimg = "/images/analyst/at0025.png";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">
+        <img src={mimg} class="object-scale-down w-96">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} 1973.07.24</div>
+        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
+          <p>二十年國際精品市場管理職場經驗, 對銷售及顧客心理有非常多的積累, </p><p>
+          加上本身熱愛身心靈方面學問</p><p>
+          2021年創立手電筒影像公司, 錄製個人PODCAST_老師大聲公及陪跑多位老師及達人們建立PODCAST及線上課程製作, 也參與多家企業行銷專案的形象錄製等項目</p><p>
+          2022年建立來聽講堂, 希望透過多年的研究精華, 讓更多人知道浩瀚的新知與擁有豐富又精進專長的達人老師們, 進而達到個人成長及家人關係優化, 身心靈完全受益其中~</p><p>
+          家庭狀況: 擁有三個小孩媽媽的創業媽媽, 因此更加重視兒童的身心靈成長的發展</p><p>
+          與家長的互動及自我探索</p><p>
+          文化感受: 因為工作的關係, 從跨國公司給予的全方位培訓, 工作之中到世界開會兼旅遊, 每次轉換內容的工作的挑戰, 到接觸來自世界各國的同事一起完成計畫的經驗, 再透過無數次的溝通之中了解各國文化的差異與優點 </p><p>
+          服務網站連結: </p><p>
+          線上課程學習網站: 來聽講堂 https://lightingke.lodestar.site/</p><p>
+          手電筒影像工作室社群媒體及Podcast : https://linktr.ee/lighting19studio</p><p>
+          個人FB粉專與IG:</p><p>
+            </p><p>
+          自我專長:</p><p>
+          親子關係</p><p>
+          Podcast_小孩真心話主持人</p><p>
+          讀書會_父母怕什麼領讀人</p><p>
+          語言</p><p>
+          英/法文 聽說讀寫良好</p><p>
+          身心靈方面</p><p>
+          皮紋檢測分析</p><p>
+          繪畫分析</p><p>
+          催眠師進階班結業</p><p>
+          紫薇八字研習 </p><p>
+          企業培訓方面</p><p>
+          精品VIP的服務力</p><p>
+          品牌經營及定位規劃</p><p>
+          職業規劃諮詢</p><p>
+          學歷:</p><p>
+          1996-2000赴法完成巴黎高等管理學院碩士: 主修精品國際市場行銷</p><p>
+          1995淡江大學法文系(輔系財務金融)畢業 </p><p>
+          工作經歷</p><p>
+          2021~			來聽講堂創始人&手電筒影像工作室執行長</p><p>
+          2019~2021		方國強高訂設計師董事長特助暨大陸品牌總經理</p><p>
+          2018			寶格麗台灣區零售部總監</p><p>
+          2016-2018		Blanc de Chine中式高級服裝”源”零售部總監</p><p>
+          2015			香奈兒台灣珠寶部頂級珠寶發展經理</p><p>
+          2010-2014		北京薇娜利雅葡萄酒公司總經理</p><p>
+          1999-2009		卡地亞台灣高級珠寶發展經理</p>
+          
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>

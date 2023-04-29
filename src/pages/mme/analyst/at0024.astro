@@ -2,8 +2,8 @@
 import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 
-const mname = "";
-const mimg = "/images/analyst/at000.gif";
+const mname = "王娟娟";
+const mimg = "/images/analyst/at0024.png";
 const mytitle = "分析師:"+mname;
 const meta = {
   title: SITE.title + " {" + mytitle + "}",
@@ -14,7 +14,19 @@ const meta = {
 ---
 
 <Layout {meta}>
-<div>{mname}</div>
-  <img src={mimg}>
-  <div></div>
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">
+        <img src={mimg} class="object-scale-down w-96">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} Judy 1965.02.22</div>
+        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
+          <p>淡江企管系畢業</p><p>
+          腦力開發教室 老師</p><p>
+          數學家教老師</p>
+        </a>
+      </div>
+    </div>
+  </div>
 </Layout>

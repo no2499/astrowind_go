@@ -3,7 +3,7 @@ import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 
 const mname = "蘇玲𦰡";
-const mimg = "/images/analyst/at0020.gif";
+const mimg = "/images/analyst/at0020.png";
 const mytitle = "分析師:"+mname;
 const meta = {
   title: SITE.title + " {" + mytitle + "}",
@@ -14,9 +14,49 @@ const meta = {
 ---
 
 <Layout {meta}>
-<div>{mname}</div>
-  <img src={mimg}>
-  <div>◎ 台灣第一家坐月子中心創辦者
-    ◎ 聖儒幼稚園園長暨創辦人
-    ◎ 致勝力量企業管理股份有限公司業務總監</div>
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">
+        <img src={mimg} class="object-scale-down w-96">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} RINA 1961.09.27</div>
+        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
+          是一位有敏锐洞悉力、創造力、感染力、對人百分百承诺, 说出做到的專業認證的绩效教練。</p><p>
+</p><p>
+          RINA 具有豊富的人生歷練和 40年嬰幼兒早教工作經驗。</p><p>
+          在親子關係教育、青少年心靈辅导、家庭關係經營和創業規劃、創意行销、誏夢想從零到有～逐步成真是 RINA 的專長</p><p>
+          擅用天生直覺力,  透过完全聆聽和提問深度的問題、引领你發現自我潜意識、啓發你在思考上更能創造可能性，不受思维及知識所框架, 易與人有共鸣, </p><p>
+          將更能指引你打造自已成為领袖, 有效支持更多人創建卓越的團隊</p><p>
+          </p><p>
+          现任：</p><p>
+          致勝力量⋯⋯⋯創辦人</p><p>
+          致勝力量⋯⋯⋯客制化企業培訓教練</p><p>
+          致勝力量企業及个人指引服務指引教练</p><p>  
+          </p><p>
+          台灣台北私立聖儒、聖如～蒙特梭利幼兒園⋯創辦人</p><p>
+          日本0-3 歲蒙特梭利教師</p><p>
+          義大利3-6歲蒙特梭利教師</p><p>
+          義大利6-12歲蒙特梭利教師</p><p>
+          </p><p>
+          經歷：</p><p>
+          1985年台灣首創專業母嬰月子中心⋯安琪兒月子中心～首開創辦人</p><p>
+          </p><p>
+          中国北京 、長春～月来悦好 月子中心</p><p>
+          企業指引敎練⋯CEO</p><p>
+          ACMA 亞洲教練及導師學院國際認證專業绩效教练。      </p><p>                           
+          北京大学 企業管理 EMBA</p><p>
+          愿景集团三階段课程總教练                       </p><p>             
+          </p><p>
+          中國二級認證心理諮商師</p><p>
+          台灣MM E皮指紋認證諮詢師</p><p>
+          </p><p>
+          兒童左右腦開發訓練指導老師</p><p>
+          </p><p>
+          國際芳香精油療法認證芳療師</p>
+          
+        </a>
+      </div>
+    </div>
+  </div>
 </Layout>
