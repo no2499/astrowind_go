@@ -2,8 +2,8 @@
 import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 
-const mname = "劉文龍";
-const mimg = "/images/analyst/at0018.gif";
+const mname = "劉文龍 Jeffery 1957.09.05";
+const mimg = "/images/analyst/at0018.png";
 const mytitle = "分析師:"+mname;
 const meta = {
   title: SITE.title + " {" + mytitle + "}",
@@ -14,12 +14,29 @@ const meta = {
 ---
 
 <Layout {meta}>
-<div>{mname}</div>
-  <img src={mimg}>
-  <div>◎ 28年職涯任派於飛行相關部門為主（担任帶飛教官、 飛安管理、飛訓計管、人事規劃、主管督導等職務）
-    ◎ 飛行人員甄選暨飛航策略顧問
-    ◎ MME 研究員暨高階行為氣質諮商師
-    ◎ 2010年發表『飛行員人格特質』研究報告
-    ◎ 2018年發表『看見了視覺與生命的意義』研究報告
-    ◎ 台東日光寺善童班及松鶴班長期志工講師</div>
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">
+        <img src={mimg} class="object-scale-down w-96">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname}</div>
+        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
+          <p>( Email: drjeffery0905@gmail.com )</p><p>
+          MME副會長，藉由MME皮紋學清晰解讀大腦的先天思維特質，樂助有心提昇生活與工作效率者，啟動全力以赴行動熱情，體驗更卓越的事業成就；協力教養者發揮學童『心智優勢』結合因材施教輔導策略，感受幸福家庭，擁抱豐盛生活與工作成果!</p><p>
+        </p><hr><p>
+          主管職務經歷: 飛行線、飛安管理、人事經管、團隊技能訓練、督導考核管理、資訊研析管理</p><p>
+          </p><hr><p>
+          ◎MME高階行為諮詢師暨專題研究</p><p>
+          ◎曾任飛行人員訓練暨學習策略專業顧問</p><p>
+          ◎長期行為引導公益講座(青少年書屋、善童班、松鶴班)</p><p>
+          ◎指引領域：情緒管理、教養關係、體質保健、人際溝通、學習力、專注力、執行力評估、專業優勢技能評估</p><p>
+          </p><p>
+          2010MME 皮紋學論文集 (主題: 飛行員人格特質之研究 )</p><p>
+          2018MME 論文集發表會 (主題: 看到了!視覺與生命的意義 )</p><p>
+          
+        </a>
+      </div>
+    </div>
+  </div>
 </Layout>

@@ -3,7 +3,7 @@ import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 
 const mname = "胡秀瑜";
-const mimg = "/images/analyst/np.gif";
+const mimg = "/images/analyst/at0015.png";
 const mytitle = "分析師:"+mname;
 const meta = {
   title: SITE.title + " {" + mytitle + "}",
@@ -14,7 +14,20 @@ const meta = {
 ---
 
 <Layout {meta}>
-<div>{mname}</div>
-  <img src={mimg}>
-  <div></div>
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">
+        <img src={mimg} class="object-scale-down w-96">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} 1967.02.04</div>
+        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
+          <p>幼兒教育工作30年以上</p><p>
+          學歷：幼兒教育碩士</p><p>
+          經歷：幼兒園教師、園長、幼兒教育學系兼任講師</p><p>
+          目前從事工作：幼兒教育.自家果園經營</p>
+        </a>
+      </div>
+    </div>
+  </div>
 </Layout>
