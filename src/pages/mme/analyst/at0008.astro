@@ -14,12 +14,21 @@ const meta = {
 ---
 
 <Layout {meta}>
-<div>{mname}</div>
-  <img src={mimg}>
-  <div>◎ 園所長資歷25年
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">
+        <img src={mimg} class="object-scale-down w-96">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname}</div>
+        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">◎ 園所長資歷25年
     ◎ 蒙特梭利老師25年
     ◎ 蒙特梭利數學培訓師
     ◎ 藝術遊戲治療
     ◎ 情緒的心理治療
-    ◎ MME高階皮紋分析師</div>
+    ◎ MME高階皮紋分析師
+  </a>
+</div>
+</div>
+</div>
 </Layout>

@@ -14,14 +14,22 @@ const meta = {
 ---
 
 <Layout {meta}>
-<div>{mname}</div>
-  <img src={mimg}>
-  <div>◎ 中國教育學會家庭教育專業委員會/家庭教育專業指導師/講師
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">
+        <img src={mimg} class="object-scale-down w-96">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname}</div>
+        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">◎ 中國教育學會家庭教育專業委員會/家庭教育專業指導師/講師
     ◎ NPMP國際公益專案管理師
     ◎ 臺灣家庭生命教育交流推廣學會/副理事長
     ◎ 台中市品格教育協會/第二屆理事長
     ◎ 101-106年舉辦「品格教育」寒暑假營隊/舉辦30場「親職講座」
     ◎ 107年舉辦「覺知專注力」暑期營隊
     ◎ 各大出版社圖書行銷規劃/業務行銷培訓
-    ◎ 中國大陸各省/覺知專注力課程/教育師培訓</div>
-</Layout>
+    ◎ 中國大陸各省/覺知專注力課程/教育師培訓  </a>
+  </div>
+  </div>
+  </div>
+  </Layout>
