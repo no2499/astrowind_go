@@ -2,7 +2,7 @@
 publishDate: 2023-06-06T00:00:00Z
 title: 1.人生劇本
 description: 媽咪感謝您讓我的故事，有了美好的開始…
-excerpt: 
+excerpt: 媽咪感謝您讓我的故事，有了美好的開始…
 image: ~/assets/images/stickers.jpg
 category: article
 tags:
