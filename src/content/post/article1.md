@@ -8,7 +8,7 @@ category: article
 tags:
   - article
   - mme
-canonical: 
+canonical: https://mme.com.tw
 ---
 
 ## 人生劇本
