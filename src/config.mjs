@@ -3,7 +3,7 @@ import defaultImage from './assets/images/default.png';
 const CONFIG = {
   name: 'MME',
 
-  origin: 'https://astrowind.vercel.app',
+  origin: 'https://mme.com.tw',
   basePathname: '/',
   trailingSlash: false,
 
