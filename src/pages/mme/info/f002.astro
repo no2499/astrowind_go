@@ -1,0 +1,21 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mytitle = "創造學習巔峰的必要條件";
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <!-- Content Widget **************** -->
+
+
+  <img src="/images/info/f002.png">
+
+
+</Layout>
