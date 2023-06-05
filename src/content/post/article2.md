@@ -1,5 +1,5 @@
 ---
-publishDate: 2023-06-06T00:00:02Z
+publishDate: 2023-06-06T00:00:04Z
 title: 3.傾聽孩子腦的聲音
 description: 腦之運作干擾與行為之探討
 excerpt: 腦之運作干擾與行為之探討

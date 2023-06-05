@@ -1,5 +1,5 @@
 ---
-publishDate: 2023-06-06T00:00:05Z
+publishDate: 2023-06-06T00:00:01Z
 title: 5.數學生活化小點子大突破
 description: 主講人:賴翠莞
 excerpt: 主講人:賴翠莞
