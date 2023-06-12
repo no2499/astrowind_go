@@ -5,9 +5,6 @@ description: 媽咪感謝您讓我的故事，有了美好的開始…
 excerpt: 媽咪感謝您讓我的故事，有了美好的開始…
 image: ~/assets/images/stickers.jpg
 category: article
-tags:
-  - article
-  - mme
 canonical: https://mme.com.tw
 ---
 

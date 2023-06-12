@@ -5,9 +5,6 @@ description: 以多元智能為法則　讓學習成為快樂又有效率的一�
 excerpt: 以多元智能為法則　讓學習成為快樂又有效率的一件事情
 image: ~/assets/images/art4.png
 category: article
-tags:
-  - article
-  - mme
 canonical: https://mme.com.tw
 ---
 

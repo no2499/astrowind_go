@@ -5,9 +5,6 @@ description: 主講人:賴翠莞
 excerpt: 主講人:賴翠莞
 image: ~/assets/images/art5.png
 category: article
-tags:
-  - article
-  - mme
 canonical: https://mme.com.tw
 ---
 

@@ -5,9 +5,6 @@ description: 以優勢教學法切入
 excerpt: 以優勢教學法切入
 image: ~/assets/images/art2.png
 category: article
-tags:
-  - article
-  - mme
 canonical: https://mme.com.tw
 ---
 

@@ -5,9 +5,6 @@ description: 腦之運作干擾與行為之探討
 excerpt: 腦之運作干擾與行為之探討
 image: ~/assets/images/artificial-intelligence-3382507_640.jpg
 category: article
-tags:
-  - article
-  - mme
 canonical: https://mme.com.tw
 ---
 
