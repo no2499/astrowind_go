@@ -1,8 +1,8 @@
 ---
 publishDate: 2023-06-06T00:00:04Z
-title: 3.傾聽孩子腦的聲音
-description: 腦之運作干擾與行為之探討
-excerpt: 腦之運作干擾與行為之探討
+title: 2.教學策略－腦之優勢學習法
+description: 以優勢教學法切入
+excerpt: 以優勢教學法切入
 image: ~/assets/images/art2.png
 category: article
 tags:
