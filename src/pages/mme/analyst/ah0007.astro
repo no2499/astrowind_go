@@ -1,0 +1,34 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+const mname = "a";
+const mimg = "/images/analyst/ah0007.jpg";
+const mytitle = "分析師:"+mname;
+const meta = {
+  title: SITE.title + " {" + mytitle + "}",
+  link: SITE.description,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+<div>{mname}</div>
+  <img src={mimg}>
+  <div>。咨達國際有限公司創辦人
+。國際大腦韻律運動導師及顧問 (RMTi)
+。特殊教育之丹尼遜健腦操®導師及顧問 (大中華區首位導師)
+。丹尼遜健腦操®導師及顧問 (教育肌應學基金會)
+。丹尼遜健腦操26式培訓導師
+。最佳腦組織模式導師 (教育肌應學基金會)
+。對稱塗鴉遊戲導師 (教育肌應學基金會)
+。視覺圈導師 (教育肌應學基金會)
+。MME 資深皮紋分析師
+。世界中醫藥聯合會植物精油療法高級講師
+。國際嬰幼兒按摩導師 (國際嬰幼兒按摩協會)
+。兒童成長治療專業文憑 (香港中文大學專業進修學院)
+。沙維雅家庭治療模式證書課程
+。感覺統合運動師 (美國心理學會)
+。美國丹佛DENVER II 兒童發展評量技術員 (DDST II)</div>
+</Layout>
