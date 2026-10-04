@@ -21,6 +21,10 @@ const {
   imageWidth,
   imageHeight,
 } = Astro.props;
+
+const hasNamePrefix = name && displayName.startsWith(name);
+const headingName = hasNamePrefix ? name : displayName;
+const nameDetails = hasNamePrefix ? displayName.slice(name.length).trim() : '';
 ---
 
 <Layout {meta}>
@@ -49,7 +53,10 @@ const {
         )}
         <div class="min-w-0 text-center md:text-left">
           <p class="mb-3 text-sm font-semibold tracking-widest text-primary dark:text-blue-300">分析師介紹</p>
-          <h1 class="mb-5 break-words text-4xl font-bold leading-tight text-slate-900 dark:text-white sm:text-5xl">{displayName || '分析師'}</h1>
+          <h1 class="break-words text-4xl font-bold leading-tight text-slate-900 dark:text-white sm:text-5xl">{headingName || '分析師'}</h1>
+          {nameDetails && (
+            <p class="mt-3 break-words text-base leading-relaxed text-slate-500 dark:text-slate-300 sm:text-lg">{nameDetails}</p>
+          )}
         </div>
       </header>
 
