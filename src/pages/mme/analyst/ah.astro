@@ -1,6 +1,6 @@
 ---
 import { SITE } from '~/config.mjs';
-import Layout from '~/layouts/PageLayout.astro';
+import AnalystProfile from '~/components/common/AnalystProfile.astro';
 
 const mname = "";
 const mimg = "/images/analyst/at000.gif";
@@ -11,10 +11,13 @@ const meta = {
   description: SITE.description,
   dontUseTitleTemplate: true,
 };
+
+const qualifications = [];
 ---
 
-<Layout {meta}>
-<div>{mname}</div>
-  <img src={mimg}>
-  <div></div>
-</Layout>
+<AnalystProfile
+  name={mname}
+  image={mimg}
+  {meta}
+  {qualifications}
+/>

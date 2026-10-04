@@ -1,6 +1,6 @@
 ---
 import { SITE } from '~/config.mjs';
-import Layout from '~/layouts/PageLayout.astro';
+import AnalystProfile from '~/components/common/AnalystProfile.astro';
 
 const mname = "蔡淑瑩";
 const mimg = "/images/analyst/at0029.jpg";
@@ -11,30 +11,26 @@ const meta = {
   description: SITE.description,
   dontUseTitleTemplate: true,
 };
+
+const qualifications = [
+  "國際AMS蒙特梭利0-3歲，3-6 歲培訓師",
+  "AMI 國際蒙特梭利 0-3歲，3-6 歲合格指導員",
+  "現任兩岸多所知名蒙特梭利幼兒園督導",
+  "台灣國際嬰幼兒按摩協會講師",
+  "成大STEAM初階科學師資認證",
+  "著作：",
+  "《威茵頌幼兒音樂教本》",
+  "《蒙特梭利 3—6 歲 Q&A》",
+  "《蒙特梭利新父母口袋書》"
+];
 ---
 
-<Layout {meta}>
-  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
-    <div class="md:flex">
-      <div class="md:flex-shrink-0">
-        <img src={mimg} class="object-scale-down w-96">
-      </div>
-      <div class="p-8">
-        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} 1958.03.21</div>
-        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
-          <p>國際AMS蒙特梭利0-3歲，3-6 歲培訓師</p><p>
-          AMI 國際蒙特梭利 0-3歲，3-6 歲合格指導員</p><p>
-          現任兩岸多所知名蒙特梭利幼兒園督導</p><p>
-          台灣國際嬰幼兒按摩協會講師</p><p>
-          成大STEAM初階科學師資認證</p><p>
-          </p><p>
-          著作：</p><p>
-          《威茵頌幼兒音樂教本》</p><p>
-          《蒙特梭利 3—6 歲 Q&A》</p><p>
-          《蒙特梭利新父母口袋書》</p>
-          
-        </a>
-      </div>
-    </div>
-  </div>
-</Layout>
+<AnalystProfile
+  name={mname}
+  image={mimg}
+  {meta}
+  {qualifications}
+  displayName={mname + " 1958.03.21"}
+  imageWidth={698}
+  imageHeight={698}
+/>

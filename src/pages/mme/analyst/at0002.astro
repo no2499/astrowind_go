@@ -1,6 +1,6 @@
 ---
 import { SITE } from '~/config.mjs';
-import Layout from '~/layouts/PageLayout.astro';
+import AnalystProfile from '~/components/common/AnalystProfile.astro';
 
 const mname = "賴翠媛 Lily";
 const mimg = "/images/analyst/at0002.gif";
@@ -11,27 +11,25 @@ const meta = {
   description: SITE.description,
   dontUseTitleTemplate: true,
 };
+
+const qualifications = [
+  "中正區生活家幼稚園教學策略執行長",
+  "MME量身教育國際研究會高階分析師、中區執行長",
+  "腦與認知之皮紋學研究20年",
+  "LC指引技術教練",
+  "MME 2018年皮紋學論文協同發表-以MME工具探討繪畫分析花與瓶之成人花型與花莖研究",
+  "MME 2013年皮紋學論文集中:青少年之腦認知與策略輔導研究發表協同研究：MME打造家與園的共贏輔導策略",
+  "MME 2010年皮紋學論文:作文與皮紋關係及輔導策略研究",
+  "MME 2006年皮紋學論文:情緒干擾及兒童繪畫圖像分析與心智探討兩篇文章",
+  "MME量身教育國際研究會-身心語言潛能檢測-高階分析師(閱7000左右個案)"
+];
 ---
 
-<Layout {meta}>
-  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
-    <div class="md:flex">
-      <div class="md:flex-shrink-0">
-        <img src={mimg} class="object-scale-down w-96">
-      </div>
-      <div class="p-8">
-        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname}</div>
-        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
-          <p>◎中正區生活家幼稚園教學策略執行長</p><p>
-          ◎ MME量身教育國際研究會高階分析師、中區執行長</p><p>
-          ◎ 腦與認知之皮紋學研究20年</p><p>
-          ◎ LC指引技術教練</p><p>
-          ◎ MME 2018年皮紋學論文協同發表-以MME工具探討繪畫分析花與瓶之成人花型與花莖研究</p><p>
-          ◎ MME 2013年皮紋學論文集中:青少年之腦認知與策略輔導研究發表協同研究：MME打造家與園的共贏輔導策略</p><p>
-          ◎ MME 2010年皮紋學論文:作文與皮紋關係及輔導策略研究</p><p>
-          ◎ MME 2006年皮紋學論文:情緒干擾及兒童繪畫圖像分析與心智探討兩篇文章</p><p>
-          ◎ MME量身教育國際研究會-身心語言潛能檢測-高階分析師(閱7000左右個案)</p>
-      </div>
-    </div>
-  </div>
-</Layout>
+<AnalystProfile
+  name={mname}
+  image={mimg}
+  {meta}
+  {qualifications}
+  imageWidth={2511}
+  imageHeight={3767}
+/>

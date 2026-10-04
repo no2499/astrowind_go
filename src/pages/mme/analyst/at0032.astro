@@ -1,6 +1,6 @@
 ---
 import { SITE } from '~/config.mjs';
-import Layout from '~/layouts/PageLayout.astro';
+import AnalystProfile from '~/components/common/AnalystProfile.astro';
 
 const mname = "游雯伶";
 const mimg = "/images/analyst/at0032.png";
@@ -11,25 +11,22 @@ const meta = {
   description: SITE.description,
   dontUseTitleTemplate: true,
 };
+
+const qualifications = [
+  "畢業於聖德基督學院英語系",
+  "曾任教於芝麻街美語十六年",
+  "MME研究員",
+  "創立Smart  Kids",
+  "American School於1999年"
+];
 ---
 
-<Layout {meta}>
-  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
-    <div class="md:flex">
-      <div class="md:flex-shrink-0">
-        <img src={mimg} class="object-scale-down w-96">
-      </div>
-      <div class="p-8">
-        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} Dior  1964.09.09</div>
-        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
-          <p>畢業於聖德基督學院英語系</p><p>
-          曾任教於芝麻街美語十六年</p><p>
-          MME研究員</p><p>
-          創立Smart  Kids</p><p>
-          American School於1999年</p>
-          
-        </a>
-      </div>
-    </div>
-  </div>
-</Layout>
+<AnalystProfile
+  name={mname}
+  image={mimg}
+  {meta}
+  {qualifications}
+  displayName={mname + " Dior  1964.09.09"}
+  imageWidth={808}
+  imageHeight={1136}
+/>

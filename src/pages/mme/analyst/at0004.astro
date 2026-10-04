@@ -1,6 +1,6 @@
 ---
 import { SITE } from '~/config.mjs';
-import Layout from '~/layouts/PageLayout.astro';
+import AnalystProfile from '~/components/common/AnalystProfile.astro';
 
 const mname = "范姜之秀";
 const mimg = "/images/analyst/at0004.jpg";
@@ -11,31 +11,26 @@ const meta = {
   description: SITE.description,
   dontUseTitleTemplate: true,
 };
+
+const qualifications = [
+  "是一位認真，有愛，體貼，有力量的專業皮紋諮商師",
+  "透過指掌紋幫助上千人認識自己，了解學習優勢，開啟學習自信。",
+  "不是人生勝利組，但有一顆執著充滿愛的心。",
+  "李小龍說過，我不怕練過一萬種踢法的人，只怕將一種踢法練過一萬次的人。",
+  "兒童數學教育25年，皮紋諮商20年，發揮可能性，整合資源，創造豐盛成果。",
+  "人的大腦不要勉強，他的腦會自己找到出路。",
+  "個人數學工作室 負責人",
+  "MME 量身教育研究會 腦評恆 高階分析師",
+  "2006 皮紋檢測應用於數學智能研究 發表"
+];
 ---
 
-<Layout {meta}>
-  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
-    <div class="md:flex">
-      <div class="md:flex-shrink-0">
-        <img src={mimg} class="object-scale-down w-96">
-      </div>
-      <div class="p-8">
-        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} Serena Fan Chiang  1967.10.31</div>
-        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
-          <p>是一位認真，有愛，體貼，有力量的專業皮紋諮商師</p><p>
-          </p><p>
-          透過指掌紋幫助上千人認識自己，了解學習優勢，開啟學習自信。</p><p>
-          不是人生勝利組，但有一顆執著充滿愛的心。</p><p>
-          李小龍說過，我不怕練過一萬種踢法的人，只怕將一種踢法練過一萬次的人。</p><p>
-          兒童數學教育25年，皮紋諮商20年，發揮可能性，整合資源，創造豐盛成果。</p><p>
-          人的大腦不要勉強，他的腦會自己找到出路。</p><p>
-          </p><hr><p>
-          個人數學工作室 負責人</p><p>
-          MME 量身教育研究會 腦評恆 高階分析師</p><p>
-          2006 皮紋檢測應用於數學智能研究 發表</p>
-          
-        </a>
-      </div>
-    </div>
-  </div>
-</Layout>
+<AnalystProfile
+  name={mname}
+  image={mimg}
+  {meta}
+  {qualifications}
+  displayName={mname + " Serena Fan Chiang  1967.10.31"}
+  imageWidth={699}
+  imageHeight={818}
+/>

@@ -1,6 +1,6 @@
 ---
 import { SITE } from '~/config.mjs';
-import Layout from '~/layouts/PageLayout.astro';
+import AnalystProfile from '~/components/common/AnalystProfile.astro';
 
 const mname = "蔡宜芳";
 const mimg = "/images/analyst/at0033.png";
@@ -11,29 +11,26 @@ const meta = {
   description: SITE.description,
   dontUseTitleTemplate: true,
 };
+
+const qualifications = [
+  "金門的MME服務",
+  "國中的特教生輔導、金城國中青少年輔導、",
+  "金門少年觀護所的服務",
+  "金門經營事業項目",
+  "金門淳新特產行",
+  "廈門三元富通有限公司",
+  "金鴻福有限公司",
+  "通恆租車",
+  "微風海戀民宿"
+];
 ---
 
-<Layout {meta}>
-  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
-    <div class="md:flex">
-      <div class="md:flex-shrink-0">
-        <img src={mimg} class="object-scale-down w-96">
-      </div>
-      <div class="p-8">
-        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} 1968.03.08</div>
-        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
-          <p>金門的MME服務</p><p>
-          國中的特教生輔導、金城國中青少年輔導、</p><p>
-          金門少年觀護所的服務</p><p>
-          金門經營事業項目</p><p>
-          金門淳新特產行</p><p>
-          廈門三元富通有限公司</p><p>
-          金鴻福有限公司</p><p>
-          通恆租車</p><p>
-          微風海戀民宿
-          </p>
-        </a>
-      </div>
-    </div>
-  </div>
-</Layout>
+<AnalystProfile
+  name={mname}
+  image={mimg}
+  {meta}
+  {qualifications}
+  displayName={mname + " 1968.03.08"}
+  imageWidth={357}
+  imageHeight={445}
+/>

@@ -1,6 +1,6 @@
 ---
 import { SITE } from '~/config.mjs';
-import Layout from '~/layouts/PageLayout.astro';
+import AnalystProfile from '~/components/common/AnalystProfile.astro';
 
 const mname = "呂玉娟";
 const mimg = "/images/analyst/at0005.jpg";
@@ -11,27 +11,24 @@ const meta = {
   description: SITE.description,
   dontUseTitleTemplate: true,
 };
+
+const qualifications = [
+  "現任:",
+  "何嘉仁LASY建構積木講師",
+  "來得幼兒園講師",
+  "高爾工作室負責人",
+  "曾任:",
+  "三峽兔子屋畫室捏塑講師",
+  "台北橋幼幼兒園建構積木講師"
+];
 ---
 
-<Layout {meta}>
-  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
-    <div class="md:flex">
-      <div class="md:flex-shrink-0">
-        <img src={mimg} class="object-scale-down w-96">
-      </div>
-      <div class="p-8">
-        <div class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">{mname} 1974.11.08</div>
-        <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black word-break">
-          <p>現任:</p><p>
-          何嘉仁LASY建構積木講師</p><p>
-          來得幼兒園講師</p><p>
-          高爾工作室負責人</p><p>
-          曾任:</p><p>
-          三峽兔子屋畫室捏塑講師</p><p>
-          台北橋幼幼兒園建構積木講師</p>
-          
-        </a>
-      </div>
-    </div>
-  </div>
-</Layout>
+<AnalystProfile
+  name={mname}
+  image={mimg}
+  {meta}
+  {qualifications}
+  displayName={mname + " 1974.11.08"}
+  imageWidth={421}
+  imageHeight={632}
+/>
